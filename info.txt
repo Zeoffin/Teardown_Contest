@@ -1,6 +1,6 @@
-name = Mod name here
-author = Your name here
-description = Informative description here
+name = Contest Mod
+author = ERNOID & Zeoffin
+description = Best mod ever
 tags=
 
 # If description contains [noupload] the description on Steam workshop will not be overwritten.
