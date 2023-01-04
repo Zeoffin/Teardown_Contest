@@ -2186,10 +2186,13 @@
 			</voxbox>
 		</vox>
 	</group>
-	<vox tags="explosive=10" pos="10.8 1.3 -9.7" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell">
+	<vox name="PowerCell" tags="explosive=10" pos="10.8 1.3 -9.7" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell">
 		<voxbox name="Light_Bulb" tags="explosive=10" pos="0.1 0.1 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 			<light name="Light_Green" pos="0.05 0.05 0.1" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.05" reach="1.5" unshadowed="0.1" fogscale="50" glare="0.5"/>
 		</voxbox>
 	</vox>
+	<vox name="OxigenTank_Big" tags="explosive=0.5" pos="12.1 0.5 17.2" rot="0.0 0.0 0.0" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
+	<vox name="OxigenTank_Medium" tags="explosive=0.3" pos="8.0 0.5 19.0" rot="0.0 0.0 0.0" density="3" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
+	<vox name="OxigenTank_Small" tags="explosive=0.2" pos="14.6 0.5 18.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
 </scene>
 
