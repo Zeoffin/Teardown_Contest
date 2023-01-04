@@ -3,10 +3,10 @@
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
 	<voxbox name="Ground" pos="-25.0 0.0 -25.0" size="500 1 500"/>
-	<spawnpoint name="Player_Spawnpoint" pos="13.4 1.55 -13.4" rot="0.0 -180.0 0.0"/>
+	<spawnpoint name="Player_Spawnpoint" pos="13.4 1.55 -10.45" rot="0.0 -180.0 0.0"/>
 	<group name="Corridor_Basic_TubeLeft" pos="3.4 0.1 -10.2">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -46,7 +46,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -129,8 +129,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.9" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Left"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -170,7 +170,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -247,8 +247,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Basic_TubeLeft" pos="-7.6 0.1 16.6" rot="0.0 90.0 0.0">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -288,7 +288,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -371,8 +371,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.9" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Left"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -412,7 +412,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -489,8 +489,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Basic_TubeLeft" pos="-16.9 0.1 16.6" rot="0.0 90.0 0.0">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -530,7 +530,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -613,8 +613,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.9" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Left"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -654,7 +654,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -731,8 +731,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Basic_Basic_Vent" pos="3.4 0.1 8.4">
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -772,7 +772,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -847,8 +847,8 @@
 				</voxbox>
 			</group>
 		</vox>
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -888,7 +888,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -965,8 +965,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_TubeBoth_TubeRight_Vent" pos="3.4 0.1 -0.9">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 -180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Right_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 -180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Right_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1006,7 +1006,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1089,8 +1089,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.5" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Right"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Both_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Both_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1130,7 +1130,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1215,8 +1215,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorway_Doorframe" pos="3.4 0.1 -17.7">
-		<vox pos="1.8 0.0 1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+		<vox pos="1.8 0.0 1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
+		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1227,11 +1227,11 @@
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 		</vox>
-		<vox pos="-1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+		<vox pos="-1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
+		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1245,7 +1245,7 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorframe" pos="19.8 0.1 16.6" rot="0.0 90.0 0.0">
-		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1256,10 +1256,10 @@
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 		</vox>
-		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1273,7 +1273,7 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorframe" pos="-0.2 0.1 16.6" rot="0.0 90.0 0.0">
-		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1284,10 +1284,10 @@
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="10" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 		</vox>
-		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="10" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1301,7 +1301,7 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorframe" pos="-21.6 0.1 16.6" rot="0.0 90.0 0.0">
-		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1312,10 +1312,10 @@
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 		</vox>
-		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1329,52 +1329,50 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorway" pos="8.35 0.1 16.6">
-		<vox pos="0.05 0.0 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-		<vox pos="0.05 0.0 1.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-	</group>
-	<group name="Vents" pos="3.4 4.2 -1.0">
-		<vox pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
-		<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
-			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
-				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
-			</voxbox>
-		</vox>
-		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
-			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
-				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
-			</voxbox>
-		</vox>
-		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		<vox pos="0.05 0.0 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
+		<vox pos="0.05 0.0 1.8" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
 	</group>
 	<group name="Corridor_Turn_1_1_flat_Ventend" pos="3.4 0.1 14.8">
-		<vox pos="-1.8 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd"/>
-		<vox pos="-1.8 0.0 3.6" rot="0.0 -90.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
-		<vox pos="1.8 0.0 3.6" rot="0.0 -90.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
-		<vox pos="1.8 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd_Inv"/>
+		<vox pos="-1.8 0.0 0.0" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd"/>
+		<vox pos="-1.8 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
+		<vox pos="1.8 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
+		<vox pos="1.8 0.0 0.0" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd_Inv"/>
 	</group>
 	<group name="Corridor_Turn_1_1_flat_Ventend" pos="13.4 0.1 14.8">
-		<vox pos="-1.8 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd"/>
-		<vox pos="1.8 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd_Inv"/>
-		<vox pos="-1.8 0.0 3.6" rot="0.0 -90.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_3"/>
-		<vox pos="1.8 0.0 3.6" rot="0.0 -90.0 0.0" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_2"/>
+		<vox pos="-1.8 0.0 0.0" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd"/>
+		<vox pos="1.8 0.0 0.0" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_1_flat_VentEnd_Inv"/>
+		<vox pos="-1.8 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_3"/>
+		<vox pos="1.8 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_2"/>
 	</group>
 	<group name="Vents" pos="13.4 4.2 -1.0">
-		<vox pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
-		<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
+		<vox pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		<vox pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
 			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
 			</voxbox>
 		</vox>
-		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
+		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
 			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
 			</voxbox>
 		</vox>
-		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		<vox pos="0.0 0.0 9.4" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		<vox pos="-10.0 0.0 0.1" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		<vox pos="-10.0 0.0 0.1" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
+			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
+				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
+			</voxbox>
+		</vox>
+		<vox pos="-10.0 0.0 9.4" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
+			<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
+				<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
+			</voxbox>
+		</vox>
+		<vox pos="-10.0 0.0 9.4" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
 	</group>
 	<group name="Corridor_Basic_TubeLeft" pos="13.4 0.1 -10.2">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Left.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1414,7 +1412,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1497,8 +1495,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.9" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Left"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1538,7 +1536,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1615,8 +1613,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Basic_Basic_Vent" pos="13.4 0.1 8.4">
-		<vox pos="-3.4 -4.1 1.7" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1656,7 +1654,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1731,8 +1729,8 @@
 				</voxbox>
 			</group>
 		</vox>
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1772,7 +1770,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1849,8 +1847,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_TubeBoth_TubeRight_Vent" pos="13.4 0.1 -0.9">
-		<vox pos="3.4 -4.1 -1.8" rot="0.0 -180.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Right_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="3.4 -4.1 -1.8" rot="0.0 -180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Right_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1890,7 +1888,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1973,8 +1971,8 @@
 			</group>
 			<vox tags="explosive=0.4" pos="0.85 4.6 -1.5" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Right"/>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Both_Vent.vox">
-			<vox pos="1.8 4.3 -5.2" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+		<vox pos="-3.4 -4.1 1.7" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Both_Vent.vox">
+			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2014,7 +2012,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<vox pos="1.8 4.3 1.8" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
+			<vox pos="1.8 4.3 1.8" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 						<light name="Light_Blue" pos="0.05 0.05 1.0" rot="0.0 360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.9 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2099,8 +2097,8 @@
 		</vox>
 	</group>
 	<group name="Corridor_Doorway_Doorframe" pos="13.4 0.1 -17.7">
-		<vox pos="1.8 0.0 1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+		<vox pos="1.8 0.0 1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
+		<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2111,11 +2109,11 @@
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 		</vox>
-		<vox pos="-1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
-		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="2" strength="3" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
-			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="2" strength="3" collide="true" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+		<vox pos="-1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway"/>
+		<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
 			<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 				<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 				<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2125,6 +2123,66 @@
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+		</vox>
+	</group>
+	<group name="Chest" pos="13.1 0.5 18.5" rot="0.0 0.0 0.0">
+		<vox pos="0.0 0.6 0.0" rot="0.0 0.0 0.0" density="1.5" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Door">
+			<joint name="Hinge" pos="-0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+			<joint name="Hinge" pos="0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+		</vox>
+		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="4" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Body">
+			<voxbox name="Light_Bulb" pos="0.7 0.2 0.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.7 0.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.2 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="0.5 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+		</vox>
+	</group>
+	<group name="Chest" pos="12.15 1.3 18.3" rot="0.0 -10.0 0.0">
+		<vox pos="0.0 0.6 0.0" rot="0.0 0.0 0.0" density="1.5" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Door">
+			<joint name="Hinge" pos="-0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+			<joint name="Hinge" pos="0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+		</vox>
+		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="4" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Body">
+			<voxbox name="Light_Bulb" pos="0.7 0.2 0.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.7 0.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.2 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="0.5 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+		</vox>
+	</group>
+	<group name="Chest" pos="11.15 0.5 17.95" rot="0.0 -50.0 0.0">
+		<vox pos="0.0 0.6 0.0" rot="0.0 0.0 0.0" density="1.5" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Door">
+			<joint name="Hinge" pos="-0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+			<joint name="Hinge" pos="0.35 0.0 0.5" rot="0.0 90.0 0.0" type="hinge" collide="true"/>
+		</vox>
+		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="4" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Body">
+			<voxbox name="Light_Bulb" pos="0.7 0.2 0.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.7 0.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.2 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.2 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="0.5 0.2 -0.4" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.15 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.05" size="0.3 0.1" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</vox>
 	</group>
