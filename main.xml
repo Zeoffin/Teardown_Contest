@@ -2199,5 +2199,29 @@
 	</group>
 	<vox name="OxigenTank_Medium" tags="explosive=0.3" pos="8.0 0.5 19.0" rot="0.0 0.0 0.0" density="3" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
 	<vox name="OxigenTank_Small" tags="explosive=0.2" pos="11.9 0.5 17.5" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+	<group name="OxygenTank_Compartment" pos="5.1 1.9 19.5" rot="0.0 0.0 0.0">
+		<vox name="OxigenTank_Shelf" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" density="1" strength="1" collide="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Shelf">
+			<voxbox name="Light_Bulb" pos="0.55 1.2 -0.1" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.2 0.1" reach="2" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="0.15 1.2 -0.1" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.2 0.1" reach="2" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.25 1.2 -0.1" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.2 0.1" reach="2" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.65 1.2 -0.1" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue_Dim" pos="0.1 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.2 0.1" reach="2" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
+		</vox>
+		<vox name="OxigenTank_Door" pos="-0.0 0.0 -0.2" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Shelf_Door">
+			<joint name="hinge" pos="0.6 0.0 0.0" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.001" rotspring="0.01" collide="true"/>
+			<joint name="hinge" pos="-0.5 0.0 0.0" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.001" rotspring="0.01" collide="true"/>
+		</vox>
+		<vox name="OxigenTank_Small" tags="explosive=0.2" pos="0.2 0.2 0.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+		<vox name="OxigenTank_Small" tags="explosive=0.2" pos="0.6 0.2 0.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+		<vox name="OxigenTank_Small" tags="explosive=0.2" pos="-0.2 0.2 0.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+		<vox name="OxigenTank_Small" tags="explosive=0.2" pos="-0.6 0.2 0.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+	</group>
 </scene>
 
