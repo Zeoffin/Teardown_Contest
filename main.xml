@@ -2191,8 +2191,13 @@
 			<light name="Light_Green" pos="0.05 0.05 0.1" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.05" reach="1.5" unshadowed="0.1" fogscale="50" glare="0.5"/>
 		</voxbox>
 	</vox>
-	<vox name="OxigenTank_Big" tags="explosive=0.5" pos="12.1 0.5 17.2" rot="0.0 0.0 0.0" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
+	<vox name="OxigenTank_Big" tags="explosive=0.5" pos="14.5 0.8 17.8" rot="0.0 130.0 -90.0" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
+	<group name="OxygenTank_Rack" pos="15.4 0.5 18.6" rot="0.0 20.0 0.0">
+		<vox name="OxigenTank_Big" tags="explosive=0.5" pos="0.75 0.2 0.0" rot="0.0 0.0 0.0" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
+		<vox name="OxigenTank_Big" tags="explosive=0.5" pos="-0.0 0.2 -0.0" rot="0.0 0.0 0.0" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
+		<vox name="OxigenTank_Holder" tags="explosive=0.2" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="3" strength="2" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Holder"/>
+	</group>
 	<vox name="OxigenTank_Medium" tags="explosive=0.3" pos="8.0 0.5 19.0" rot="0.0 0.0 0.0" density="3" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
-	<vox name="OxigenTank_Small" tags="explosive=0.2" pos="14.6 0.5 18.1" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
+	<vox name="OxigenTank_Small" tags="explosive=0.2" pos="11.9 0.5 17.5" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Small"/>
 </scene>
 
