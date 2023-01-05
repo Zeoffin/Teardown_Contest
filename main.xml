@@ -3,7 +3,7 @@
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
 	<voxbox name="Ground" pos="-42.4 0.0 -39.7" size="1000 1 1000" color="0.37 0.37 0.37"/>
-	<spawnpoint name="Player_Spawnpoint" pos="13.4 1.55 -10.45" rot="0.0 -180.0 0.0"/>
+	<spawnpoint name="Player_Spawnpoint" pos="20.35 1.8 17.35" rot="0.0 180.0 0.0"/>
 	<group name="Corridor_Doorway_Doorframe" pos="3.4 0.1 -17.7">
 		<vox pos="1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_VentEnd_Window_Medium_Inv">
 			<voxbox name="Light_Bulb" pos="-0.8 1.5 -1.3" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
@@ -2313,7 +2313,7 @@
 		</vox>
 	</group>
 	<group name="Chest_big" pos="25.7 0.5 16.5" rot="0.0 90.0 0.0">
-		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Big">
+		<vox pos="-1.3 0.0 5.05" rot="0.0 0.0 0.0" density="3" strength="40" prop="true" file="MOD/assets/Sci_Fi_Chest.vox" object="Chest_Big">
 			<voxbox name="Light_Bulb" pos="0.4 0.9 -0.7" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="8 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue_Dim" pos="0.4 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.1" size="0.8 0.1" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
@@ -2424,24 +2424,24 @@
 			</voxbox>
 		</vox>
 	</group>
-	<vox name="PowerCell_Small" tags="explosive=10" pos="20.9 0.5 14.6" rot="0.0 0.0 0.0" desc="PowerCell -S" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Small">
+	<vox name="PowerCell_Small" tags="explosive=10" pos="21.9 1.95 19.6" rot="0.0 0.0 0.0" desc="PowerCell -S" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Small">
 		<voxbox name="Light_Bulb" tags="explosive=10" pos="0.1 0.1 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="0.0 0.97 1.0" pbr="0 0 0 32">
-			<light name="Light_Green" pos="0.05 0.05 0.1" rot="0.0 -360.0 -90.0" type="capsule" color="0.0 0.97 1.0" scale="0.3" size="0.1 0.05" reach="1" unshadowed="0.1" fogscale="50" glare="0.5"/>
+			<light name="Light_Blue" pos="0.05 0.05 0.1" rot="0.0 -360.0 -90.0" type="capsule" color="0.0 0.97 1.0" scale="0.3" size="0.1 0.05" reach="1" unshadowed="0.1" fogscale="50" glare="0.2"/>
 		</voxbox>
 	</vox>
 	<vox name="PowerCell_Medium" tags="explosive=20" pos="24.5 0.8 14.4" rot="0.0 0.0 0.0" desc="PowerCell -M" density="4" strength="3" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Medium">
 		<voxbox name="Light_Bulb" tags="explosive=20" pos="0.2 0.1 0.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 4 6" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Green" pos="0.2 0.2 0.35" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.2" reach="2" unshadowed="0.1" fogscale="70" glare="0.7"/>
+			<light name="Light_Green" pos="0.2 0.2 0.35" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.2" reach="2" unshadowed="0.1" fogscale="70" glare="0.3"/>
 		</voxbox>
 	</vox>
 	<vox name="PowerCell_Medium" tags="explosive=20" pos="26.0 0.8 14.4" rot="0.0 0.0 0.0" desc="PowerCell -M" density="4" strength="3" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Medium">
 		<voxbox name="Light_Bulb" tags="explosive=20" pos="0.2 0.1 0.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 4 6" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Green" pos="0.2 0.2 0.35" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.2" reach="2" unshadowed="0.1" fogscale="70" glare="0.7"/>
+			<light name="Light_Green" pos="0.2 0.2 0.35" rot="0.0 -360.0 -90.0" type="capsule" color="0.01 1.0 0.0" scale="0.5" size="0.1 0.2" reach="2" unshadowed="0.1" fogscale="70" glare="0.3"/>
 		</voxbox>
 	</vox>
-	<vox name="PowerCell_Big" tags="explosive=40" pos="28.85 0.5 16.9" rot="0.0 0.0 0.0" desc="PowerCell -L" density="7" strength="5" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Big">
+	<vox name="PowerCell_Big" tags="explosive=40" pos="31.65 0.5 14.95" rot="0.0 0.0 0.0" desc="PowerCell -L" density="7" strength="5" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Big">
 		<voxbox name="Light_Bulb" tags="explosive=40" pos="0.35 0.1 0.25" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="6 6 12" material="glass" color="1.0 0.65 0.0" pbr="0 0 0 32">
-			<light name="Light_Green" pos="0.3 0.3 0.6" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.65 0.0" scale="0.7" size="0.2 0.3" reach="3" unshadowed="0.1" fogscale="100" glare="1"/>
+			<light name="Light_Orange" pos="0.3 0.3 0.6" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.65 0.0" scale="0.7" size="0.2 0.3" reach="3" unshadowed="0.1" fogscale="100" glare="0.5"/>
 		</voxbox>
 	</vox>
 	<vox name="OxigenTank_Big" tags="explosive=0.5" pos="0.6 0.8 19.15" rot="0.0 140.0 -90.0" desc="Oxygen -L" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
@@ -2496,18 +2496,27 @@
 			</rope>
 		</vox>
 	</group>
-	<vox name="Electrical_Box_Small" tags="explosive=0.001" pos="9.1 1.7 25.3" rot="0.0 90.0 0.0" density="2" strength="40" collide="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small">
-		<vox name="Electrical_Box_Small" pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small_Door">
+	<vox name="Electrical_Box_S" tags="explosive=0.001" pos="9.1 1.7 25.3" rot="0.0 90.0 0.0" density="2" strength="40" collide="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small">
+		<vox name="Electrical_Box_S_Door" pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small_Door">
 			<joint name="hinge" pos="0.35 0.65 0.0" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			<joint name="hinge" pos="0.35 0.25 0.0" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 		</vox>
-		<voxbox name="Button" pos="0.2 0.6 -0.1" rot="0.0 0.0 0.0" desc="OFF" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
-		<voxbox name="Button" pos="0.2 0.2 -0.1" rot="0.0 0.0 0.0" desc="ON" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
-		<voxbox name="Light_Bulb" pos="0.0 0.3 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+		<voxbox name="Button" pos="0.2 0.6 -0.1" rot="0.0 0.0 0.0" desc="ON" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
+		<voxbox name="Button" pos="0.2 0.2 -0.1" rot="0.0 0.0 0.0" desc="OFF" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
+		<voxbox name="Light_Bulb" pos="0.0 0.7 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 			<light name="Light_Blue_Dim" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.1 0.1" reach="1" unshadowed="0.1" fogscale="10"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" pos="0.0 0.7 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.1 0.1" pbr="0 0 0 32">
+		<voxbox name="Light_Bulb" pos="0.0 0.3 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.1 0.1" pbr="0 0 0 32">
 			<light name="Light_Red_Dim" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" type="area" color="1.0 0.1 0.1" scale="0.05" size="0.1 0.1" reach="1" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+	</vox>
+	<vox name="Electrical_Box_M" tags="explosive=0.001" pos="21.6 1.75 19.6" rot="0.0 0.0 0.0" density="2" strength="40" collide="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Medium">
+		<vox name="Electrical_Box_M_Door" pos="0.0 0.1 -0.4" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Medium_Door">
+			<joint name="hinge" pos="0.7 0.8 0.1" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+			<joint name="hinge" pos="0.7 0.3 0.1" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+		</vox>
+		<voxbox name="Lever" pos="-0.3 0.65 -0.05" rot="90.0 0.0 0.0" desc="Power" prop="true" size="1 1 4" material="Metal" color="1.0 0.68 0.16" pbr="0 1 0 0">
+			<joint name="hinge" pos="0.05 0.05 0.0" rot="0.0 90.0 0.0" type="hinge" size="0.2" rotstrength="0.0001" rotspring="0.1" collide="true" limits="-180 180"/>
 		</voxbox>
 	</vox>
 </scene>
