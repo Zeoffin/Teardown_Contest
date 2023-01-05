@@ -2496,5 +2496,19 @@
 			</rope>
 		</vox>
 	</group>
+	<vox name="Electrical_Box_Small" tags="explosive=0.001" pos="9.1 1.7 25.3" rot="0.0 90.0 0.0" density="2" strength="40" collide="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small">
+		<vox name="Electrical_Box_Small" pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Small_Door">
+			<joint name="hinge" pos="0.35 0.65 0.0" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+			<joint name="hinge" pos="0.35 0.25 0.0" rot="90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+		</vox>
+		<voxbox name="Button" pos="0.2 0.6 -0.1" rot="0.0 0.0 0.0" desc="OFF" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
+		<voxbox name="Button" pos="0.2 0.2 -0.1" rot="0.0 0.0 0.0" desc="ON" collide="true" size="1 1 1" material="plastic" color="1.0 0.68 0.16"/>
+		<voxbox name="Light_Bulb" pos="0.0 0.3 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue_Dim" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.05" size="0.1 0.1" reach="1" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.0 0.7 0.0" rot="0.0 -180.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.1 0.1" pbr="0 0 0 32">
+			<light name="Light_Red_Dim" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" type="area" color="1.0 0.1 0.1" scale="0.05" size="0.1 0.1" reach="1" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+	</vox>
 </scene>
 
