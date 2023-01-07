@@ -1,5 +1,6 @@
 function init()
-    DebugPrint("Test message")
+    DebugPrint("Starting script...")
+
 end
 
 function tick()
