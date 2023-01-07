@@ -4,12 +4,15 @@
 --- TODO: Query everything with tag rayCanPass to set as rejectBody
 
 starCount = 24     											--- Number of star directions
+bodyPressureSpeed = 0.5
+playerPressureSpeed = 0.02
 
 function init()
 	scanners = FindLocations("airScanner", true)	            	--- Locations of the scanners
+	roomTriggers = FindTriggers('airTrigger', true)
 	DebugPrint(scanners)
 	pressure = 100                                 					--- Pressure
-	activePosList = {}                              --- so that each hole can be saved and constantly checked
+	activeHolesList = {}                              --- so that each hole can be saved and constantly checked
 	activeDirList = {}                              --- List of all direction scanning
 	activeTimeList = {}                             --- smt ?
 	activated = false --changes when everything activates
@@ -20,7 +23,7 @@ function init()
 end
 
 
-function tick()
+function tick(dt)
 
 	if rotationVal ~=360 then
 		rotationVal =  rotationVal + 2
@@ -28,7 +31,6 @@ function tick()
 		rotationVal = 0
 	end
 
-	--- Check for holes
 	if pressure > 0 then
 		i = 0 --raycast counter
 
@@ -47,7 +49,7 @@ function tick()
 					--- copy the pos of probe
 					local rayPosition = VecCopy(scannerPosition)
 
-					if activePosList[i] ~= rayPosition and activeDirList[i] ~= rotatedVector then
+					if activeHolesList[i] ~= rayPosition and activeDirList[i] ~= rotatedVector then
 
 						--DebugLine(rayPosition,VecAdd(rayPosition,dir),0,0,1) --debug the current checked position
 
@@ -59,7 +61,7 @@ function tick()
 							--DrawLine(rayPosition, endpoint, 1, 0, 0)
 							if not hit then
 								DebugPrint("FOUND HOLE")
-								activePosList[i] = rayPosition
+								activeHolesList[i] = rayPosition
 								activeDirList[i] = rotatedVector
 								activeTimeList[i] = 0
 								break
@@ -73,8 +75,9 @@ function tick()
 
 			end
 
-		for p in pairs(activePosList) do
-			local pos = activePosList[p]
+		--- Decompression
+		for p in pairs(activeHolesList) do
+			local pos = activeHolesList[p]
 			local dir = activeDirList[p]
 
 			--DebugLine(pos,VecAdd(pos,dir),1,0,0) --debug active holes
@@ -83,7 +86,7 @@ function tick()
 			ParticleColor(0.9,0.9,0.9)
 			ParticleRadius(1)
 			ParticleType("plain")
-			ParticleAlpha(0.3,0.0, "easeout")
+			ParticleAlpha(0.1,0.0, "easeout")
 			ParticleCollide(0)
 
 			if math.random(1,10) > 8 then
@@ -97,22 +100,23 @@ function tick()
 			--	holepos[3] = -50
 			--end
 
+			--- query for bodies within the trigger of that room
 			bodies = QueryAabbBodies(VecSub(pos,Vec(6,6,20)),VecAdd(pos,Vec(6,6,20)))
 			for b, body in pairs(bodies) do
 				QueryRejectBody(body)
 				local center = TransformToParentPoint(GetBodyTransform(body),GetBodyCenterOfMass(body))
-				ApplyBodyImpulse(body,center,VecScale(VecSub(holepos,center),0.5))
+				ApplyBodyImpulse(body,center,VecScale(VecSub(holepos,center),bodyPressureSpeed))
 			end
 			local ptrans = GetPlayerTransform()
-			local vec = VecSub(holepos,ptrans.pos)
+			local vec = VecSub(holepos,ptrans.pos)	--- If player in the trigger(s)
 			if VecLength(vec) < 20 then
-				SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,0.02)))
+				SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,playerPressureSpeed)))
 			end
 			hit, dist = QueryRaycast(pos,dir,10)
 			if hit then
 				activeTimeList[p] = activeTimeList[p] + dt
 				if activeTimeList[p] > 5 then
-					activePosList[p] = nil
+					activeHolesList[p] = nil
 					activeDirList[p] = nil
 				end
 			end
