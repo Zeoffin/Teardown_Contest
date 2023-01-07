@@ -4,9 +4,8 @@
 --- TODO: Query everything with tag rayCanPass to set as rejectBody
 
 function init()
-	airScanner = FindLocation("airScanner", true)	            	--- Locations of the scanners
-	scannerPosition = GetLocationTransform(airScanner).pos          --- Positional vector
-	scannerRotation = GetLocationTransform(airScanner).rot          --- Positional vector rotation
+	scanners = FindLocations("airScanner", true)	            	--- Locations of the scanners
+	DebugPrint(scanners)
 	resolution = 12     											--- Number of star directions
 	pressure = 100                                 					--- Pressure
 	activePosList = {}                              --- so that each hole can be saved and constantly checked
@@ -34,37 +33,42 @@ function tick()
 	if pressure > 0 then
 		i = 0 --raycast counter
 
-		--- copy the pos of probe
-		local rayPosition = VecCopy(scannerPosition)
-		--local rayRotation = VecCopy(scannerRotation)
+			--- resolution ... ?
+			for r=0,resolution do
+				
+				local quat = QuatEuler(0,0,r*360/resolution)
+				local dir = TransformToParentPoint(Transform(Vec(0,0,0),quat),Vec(1,0,0))
 
+				local rotationQuat = QuatEuler(rotationVal, rotationVal, rotationVal)
+				local rotatedVector = QuatRotateVec(rotationQuat, dir)
 
-		--- resolution ... ?
-		for r=0,resolution do
-			local quat = QuatEuler(0,0,r*360/resolution)
-			local dir = TransformToParentPoint(Transform(Vec(0,0,0),quat),Vec(1,0,0))
+				for index, scanner in pairs(scanners) do
 
-			local rotationQuat = QuatEuler(rotationVal, rotationVal, rotationVal)
-			local rotatedVector = QuatRotateVec(rotationQuat, dir)
+					scannerPosition = GetLocationTransform(scanner).pos          --- Positional vector
 
+					--- copy the pos of probe
+					local rayPosition = VecCopy(scannerPosition)
 
-			if activePosList[i] ~= rayPosition and activeDirList[i] ~= rotatedVector then
+					if activePosList[i] ~= rayPosition and activeDirList[i] ~= rotatedVector then
 
-				--DebugLine(rayPosition,VecAdd(rayPosition,dir),0,0,1) --debug the current checked position
+						--DebugLine(rayPosition,VecAdd(rayPosition,dir),0,0,1) --debug the current checked position
 
-				i = i + 1
-				hit, dist = QueryRaycast(rayPosition,rotatedVector,10)
-				endpoint = VecAdd(rayPosition, VecScale(rotatedVector, dist))
-				DrawLine(rayPosition, endpoint, 1, 0, 0)
-				if not hit then
-					DebugPrint("FOUND HOLE")
-					activePosList[i] = rayPosition
-					activeDirList[i] = rotatedVector
-					activeTimeList[i] = 0
+						i = i + 1
+						hit, dist = QueryRaycast(rayPosition,rotatedVector,100)
+						endpoint = VecAdd(rayPosition, VecScale(rotatedVector, dist))
+						DrawLine(rayPosition, endpoint, 1, 0, 0)
+						if not hit then
+							DebugPrint("FOUND HOLE")
+							activePosList[i] = rayPosition
+							activeDirList[i] = rotatedVector
+							activeTimeList[i] = 0
 
+						end
+					end
 				end
+
 			end
-		end
+
 	end
 
 		--- TODO: The rest
