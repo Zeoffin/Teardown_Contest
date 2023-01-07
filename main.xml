@@ -560,6 +560,8 @@
 				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
 			</rope>
 		</voxbox>
+		<trigger pos="1.8 0.5 1.7" type="box" size="2 2 2"/>
+		<location name="airScanner" tags="airScanner" pos="1.9 1.8 1.7" rot="0.0 0.0 0.0"/>
 	</group>
 	<group name="Corridor_Turn_1_1_flat_Ventend" pos="13.4 0.1 14.8">
 		<vox pos="-1.8 0.0 0.0" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Corner_Turn_2_Flat">
