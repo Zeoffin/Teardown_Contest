@@ -2168,6 +2168,34 @@
 	</vox>
 	<script file="MOD/scripts/decompression.lua"/>
 	<vox pos="24.2 0.5 2.8" rot="-15.0 90.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Ladders.vox" object="Ladders"/>
+	<group name="Foldable_Stairs" pos="25.4 0.1 -0.2">
+		<body pos="-0.2 0.0 -0.1" dynamic="true">
+			<vox name="Ladder_1" pos="0.25 0.0 0.1" rot="0.0 90.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Ladders.vox" object="Ladders_Foldable"/>
+			<vox name="Ladder_1" pos="-0.15 0.0 0.1" rot="0.0 90.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Ladders.vox" object="Ladders_Foldable_1"/>
+			<voxbox name="Stair_Connector" pos="-0.15 0.5 -0.4" rot="0.0 0.0 -20.0" prop="true" size="1 5 1" material="metal" color="0.31 0.31 0.31">
+				<joint pos="0.05 0.05 0.1" rot="0.0 180.0 0.0" type="hinge" limits="-5 90" autodisable="true"/>
+			</voxbox>
+			<voxbox name="Stair_Connector" pos="0.15 0.5 -0.4" rot="0.0 0.0 20.0" prop="true" size="1 5 1" material="metal" color="0.3 0.3 0.3">
+				<joint pos="0.05 0.05 0.1" type="hinge" limits="-5 90" autodisable="true"/>
+				<joint pos="0.05 0.4 0.05" rot="0.0 0.0 45.0" type="hinge" limits="-10 45" autodisable="true"/>
+				<joint pos="0.05 0.4 0.85" rot="0.0 0.0 50.0" type="hinge" limits="-10 45" autodisable="true"/>
+			</voxbox>
+			<voxbox name="Stair_Connector" pos="-0.15 0.5 0.4" rot="0.0 0.0 -20.0" prop="true" size="1 5 1" material="metal" color="0.31 0.31 0.31">
+				<joint pos="0.05 0.05 0.0" rot="0.0 180.0 0.0" type="hinge" limits="-5 90" autodisable="true"/>
+			</voxbox>
+			<voxbox name="Stair_Connector" pos="0.15 0.5 0.4" rot="0.0 0.0 20.0" prop="true" size="1 5 1" material="metal" color="0.31 0.31 0.31">
+				<joint pos="0.05 0.05 0.0" type="hinge" limits="-5 90" autodisable="true"/>
+			</voxbox>
+			<rope pos="-0.1 1.55 -0.25" size="0.1" slack="-0.1">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.3 0.0 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope pos="-0.1 1.55 0.35" size="0.1" slack="-0.1">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.3 0.0 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</body>
+	</group>
 	<voxbox pos="22.5 0.0 1.5" rot="0.0 0.0 0.0" size="50 5 25"/>
 </scene>
 
