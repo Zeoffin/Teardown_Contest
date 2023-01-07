@@ -2164,7 +2164,6 @@
 		</vox>
 	</vox>
 	<script file="MOD/scripts/decompression.lua"/>
-<<<<<<< Updated upstream
 	<vox pos="24.2 0.5 2.8" rot="-15.0 90.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Ladders.vox" object="Ladders"/>
 	<group name="Foldable_Stairs" pos="25.4 0.1 -0.2">
 		<body pos="-0.2 0.0 -0.1" dynamic="true">
@@ -2195,7 +2194,5 @@
 		</body>
 	</group>
 	<voxbox pos="22.5 0.0 1.5" rot="0.0 0.0 0.0" size="50 5 25"/>
-=======
->>>>>>> Stashed changes
 </scene>
 
