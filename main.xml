@@ -335,11 +335,11 @@
 					<light name="Light_Orange_Dim" pos="0.05 0.05 0.4" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.1" size="0.7 0.05" unshadowed="0.1" fogscale="10"/>
 				</voxbox>
 			</vox>
-			<vox name="Locker_Door" pos="3.6 0.3 2.1" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door">
+			<vox name="Locker_Door" pos="3.6 0.3 2.1" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door_2">
 				<joint name="hinge" pos="0.2 1.9 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 				<joint name="hinge" pos="0.2 0.1 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
-			<vox name="Locker_Door" pos="3.6 0.3 2.6" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door">
+			<vox name="Locker_Door" pos="3.6 0.3 2.6" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door_1">
 				<joint name="hinge" pos="0.2 1.9 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 				<joint name="hinge" pos="0.2 0.1 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
@@ -347,7 +347,7 @@
 				<joint name="hinge" pos="0.2 1.9 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 				<joint name="hinge" pos="0.2 0.1 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
-			<vox name="Locker_Door" pos="3.6 0.3 3.6" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door">
+			<vox name="Locker_Door" pos="3.6 0.3 3.6" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Locker_Door_4">
 				<joint name="hinge" pos="0.2 1.9 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 				<joint name="hinge" pos="0.2 0.1 -0.1" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
@@ -365,7 +365,14 @@
 				<light name="Light_Orange_Dim" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0.2 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</compound>
-		<vox pos="3.65 1.2 0.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Red"/>
+		<vox pos="3.6 1.2 0.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Red"/>
+		<vox pos="3.55 1.5 1.95" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Computer_Screen">
+			<voxbox name="Computer_Sreen" pos="-0.2 0.3 0.1" rot="0.0 0.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
+		</vox>
+		<vox pos="0.0 0.4 2.65" rot="0.0 -180.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="TV_Table"/>
+		<vox pos="0.0 1.1 2.7" rot="0.0 -180.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="TV">
+			<voxbox name="TV_Sreen" pos="-0.5 0.2 0.0" rot="0.0 0.0 0.0" collide="true" size="11 6 1" color="0.11 0.11 0.11"/>
+		</vox>
 		<vox pos="3.4 1.2 0.95" rot="90.0 -70.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Yellow"/>
 		<vox pos="3.25 1.2 0.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Blue"/>
 	</group>
