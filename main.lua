@@ -1,5 +1,7 @@
+--- Starting point when loading in the mod initially
+
 function init()
-    DebugPrint("Starting script...")
+    DebugPrint("<3")
 end
 
 function tick()
