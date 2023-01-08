@@ -955,11 +955,20 @@
 			</vox>
 		</group>
 		<vox pos="-3.45 0.4 0.45" rot="0.0 90.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Basic_desk"/>
+		<vox pos="6.15 0.4 -0.65" rot="0.0 -120.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
+		<vox pos="5.5 0.4 -7.7" rot="0.0 50.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
+		<vox pos="-2.95 0.4 0.45" rot="0.0 -125.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Chair"/>
 		<compound name="Desk_Lamp" pos="-3.35 1.5 -0.2" rot="0.0 120.0 0.0" density="1" strength="1" prop="true">
-			<vox pos="0.15 0.0 0.0" rot="0.0 180.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Desk_Lamp"/>
-			<voxbox name="Light_Bulb" pos="-0.05 0.6 0.0" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" prop="true" size="1 1 3" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
-				<light name="Light_Orange_Dim" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0.2 0.05" unshadowed="0.1" fogscale="5"/>
+			<vox pos="0.15 0.0 0.0" rot="0.0 180.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Candle"/>
+			<voxbox name="Light_Bulb" pos="0.05 0.3 -0.0" rot="-90.0 -90.0 0.0" density="1.5" strength="0.1" prop="true" size="1 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange_Dim" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
+		</compound>
+		<compound name="Power_Cell_Medium" tags="explosive=3" pos="3.7 0.4 2.75" rot="0.0 90.0 0.0" density="1" strength="2" prop="true">
+			<voxbox name="Light_Bulb" pos="-0.2 0.1 -0.1" density="1" strength="1" prop="true" size="4 6 4" material="glass" color="0.13 1.0 0.2" pbr="0 0 0 32">
+				<light name="Ligh_Green" pos="0.2 0.3 0.2" rot="-90.0 0.0 0.0" type="capsule" color="0.13 1.0 0.21" scale="1.5" size="0.6 0.08" reach="2" unshadowed="0.1" fogscale="10" glare="0.5"/>
+			</voxbox>
+			<vox pos="0.0 0.0 0.1" desc="PowerCell - M" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Medium"/>
 		</compound>
 	</group>
 	<group name="Corridor_Turn_1_1_flat_Ventend" pos="13.4 0.1 14.8">
