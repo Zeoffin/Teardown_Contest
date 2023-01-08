@@ -8,22 +8,35 @@ bodyPressureSpeed = 0.5
 playerPressureSpeed = 0.02
 
 function init()
+
 	scanners = FindLocations("airScanner", true)	            	--- Locations of the scanners
 	roomTriggers = FindTriggers('airTrigger', true)
+
 	DebugPrint(scanners)
-	pressure = 100                                 					--- Pressure
+	pressure = true                                 					--- Pressure
 	activeHolesList = {}                              --- so that each hole can be saved and constantly checked
 	activeDirList = {}                              --- List of all direction scanning
 	activeTimeList = {}                             --- smt ?
+	scannerTriggerTable = {}						--- scanner: trigger     K:V
 	activated = false --changes when everything activates
 	--losePressure = not GetBool("savegame.mod.cabin.depressurize_inf",false)
 	timer = 0
 	rotationVal = 0
 
+	--- Map scanners to triggers
+	mapScannerToTrigger(scannerTriggerTable)
+
 end
 
 
 function tick(dt)
+
+	-- TODO: TEST THIS ! Mosk daudz labaks/atraks veids instea
+	QueryPath(Vec(-12.0,14.0,-4.0), Vec(-1.0,15.5,3.5))
+	DebugPrint(GetPathLength())
+	DebugPrint(GetPathState())
+
+	--DrawLine()
 
 	if rotationVal ~=360 then
 		rotationVal =  rotationVal + 2
@@ -31,7 +44,9 @@ function tick(dt)
 		rotationVal = 0
 	end
 
-	if pressure > 0 then
+	triggerHolesMap = {}
+
+	if pressure then
 		i = 0 --raycast counter
 
 			for r=0,starCount do
@@ -42,9 +57,9 @@ function tick(dt)
 				local rotationQuat = QuatEuler(rotationVal, rotationVal, rotationVal)
 				local rotatedVector = QuatRotateVec(rotationQuat, dir)
 
-				for index, scanner in pairs(scanners) do
+				for scannerIndex, scanner in pairs(scanners) do
 
-					scannerPosition = GetLocationTransform(scanner).pos          --- Positional vector
+					scannerPosition = GetLocationTransform(scanner).pos          --- Positional vector of the scanner
 
 					--- copy the pos of probe
 					local rayPosition = VecCopy(scannerPosition)
@@ -55,6 +70,7 @@ function tick(dt)
 
 						i = i + 1
 
+						--- Ray tracing loop
 						for rayTracingLimits=1,4 do
 							hit, dist, normal = QueryRaycast(rayPosition,rotatedVector,50)
 							endpoint = VecAdd(rayPosition, VecScale(rotatedVector, dist))
@@ -64,6 +80,7 @@ function tick(dt)
 								activeHolesList[i] = rayPosition
 								activeDirList[i] = rotatedVector
 								activeTimeList[i] = 0
+								triggerHolesMap[scannerTriggerTable[scanner]] = activeHolesList		--- Causing errors...
 								break
 							else
 								rayPosition = VecCopy(endpoint)
@@ -86,7 +103,7 @@ function tick(dt)
 			ParticleColor(0.9,0.9,0.9)
 			ParticleRadius(1)
 			ParticleType("plain")
-			ParticleAlpha(0.1,0.0, "easeout")
+			ParticleAlpha(0.25,0.0, "easeout")
 			ParticleCollide(0)
 
 			if math.random(1,10) > 8 then
@@ -95,10 +112,6 @@ function tick(dt)
 			end
 
 			local holepos = VecAdd(pos,VecScale(dir,7))
-
-			--if holepos[3] < -44 then
-			--	holepos[3] = -50
-			--end
 
 			--- query for bodies within the trigger of that room
 			bodies = QueryAabbBodies(VecSub(pos,Vec(6,6,20)),VecAdd(pos,Vec(6,6,20)))
@@ -109,9 +122,11 @@ function tick(dt)
 			end
 			local ptrans = GetPlayerTransform()
 			local vec = VecSub(holepos,ptrans.pos)	--- If player in the trigger(s)
+
 			if VecLength(vec) < 20 then
 				SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,playerPressureSpeed)))
 			end
+
 			hit, dist = QueryRaycast(pos,dir,10)
 			if hit then
 				activeTimeList[p] = activeTimeList[p] + dt
@@ -124,4 +139,20 @@ function tick(dt)
 
 	end
 
+end
+
+--- Map a scanner object to a trigger object
+function mapScannerToTrigger(scannerTriggerTable)
+	for scannerIndex, scanner in pairs(scanners) do
+
+		scannerPosition = GetLocationTransform(scanner).pos          --- Positional vector of the scanner
+
+		--- Find the corresponding room trigger that the scanner is in and map them
+		for triggerIndex, trigger in pairs(roomTriggers) do
+			if IsPointInTrigger(trigger, scannerPosition) then
+				scannerTriggerTable[scanner] = trigger
+			end
+		end
+
+	end
 end
