@@ -780,7 +780,7 @@
 				<light name="Light_Orange_Dim" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0.2 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</compound>
-		<vox name="Carpet" pos="4.9 0.4 2.25" rot="0.0 115.0 0.0" density="0.2" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Carpet"/>
+		<vox name="Carpet" pos="4.9 0.4 2.25" rot="0.0 115.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Carpet"/>
 	</group>
 	<group name="Electricity_Room" pos="25.2 0.1 11.2" rot="0.0 180.0 0.0">
 		<vox pos="3.6 0.0 -0.0" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Wall_flat_4_Door_Frame">
@@ -906,8 +906,8 @@
 			</vox>
 		</group>
 		<vox pos="7.5 1.45 0.4" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Electricity.vox" object="Electricity_Box_Medium">
-			<compound name="Power_Cell_Small" tags="explosive=3" pos="0.3 0.2 -0.1" rot="0.0 0.0 0.0" density="1" strength="2" prop="true">
-				<voxbox name="Light_Bulb" pos="0.0 0.1 0.0" density="1" strength="1" prop="true" size="1 2 1" material="glass" color="0.13 0.69 1.0" pbr="0 0 0 32">
+			<compound name="Power_Cell_Small" tags="explosive=3" pos="0.3 0.2 -0.1" rot="0.0 0.0 0.0" desc="PowerCell - S" density="1" strength="2" prop="true">
+				<voxbox name="Light_Bulb" pos="0.0 0.1 0.0" desc="PowerCell - S" density="1" strength="1" prop="true" size="1 2 1" material="glass" color="0.13 0.69 1.0" pbr="0 0 0 32">
 					<light name="Ligh_Blue" pos="0.05 0.1 0.05" rot="-90.0 0.0 0.0" type="capsule" color="0.13 0.69 1.0" scale="1" size="0.1 0.05" reach="2" unshadowed="0.1" fogscale="10" glare="0.4"/>
 				</voxbox>
 				<vox pos="0.0 0.0 0.1" desc="PowerCell - S" density="1" strength="2" prop="true" file="MOD/assets/Sci_Fi_PowerCell.vox" object="PowerCell_Small"/>
@@ -963,6 +963,14 @@
 		<vox name="Book_Blue" pos="-3.1 1.2 2.55" rot="90.0 -150.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Blue"/>
 		<vox pos="5.95 0.8 2.55" rot="0.0 -160.0 90.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
 		<vox pos="6.1 0.4 4.1" rot="0.0 140.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_2"/>
+		<vox name="Barrier" pos="3.8 0.4 4.25" rot="0.0 -180.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrier">
+			<voxbox name="Light_Bulb" pos="-0.8 0.7 0.0" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.59 0.0" pbr="0 0 0 32">
+				<light name="Light_Orange" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.59 0.0" scale="0.2" size="0 0.05" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="1.0 0.7 0.0" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.59 0.0" pbr="0 0 0 32">
+				<light name="Light_Orange" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.59 0.0" scale="0.2" size="0 0.05" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
+		</vox>
 		<vox pos="6.8 0.4 3.3" rot="0.0 100.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel"/>
 		<vox pos="5.5 0.4 -7.7" rot="0.0 50.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
 		<vox name="Chair" pos="-2.95 0.4 0.45" rot="0.0 -125.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Chair"/>
@@ -1175,7 +1183,7 @@
 				<light name="Light_Blue" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="0.4 0.1" reach="15" unshadowed="0.1" fogscale="40"/>
 			</voxbox>
 		</group>
-		<vox name="Carpet" pos="-2.8 0.4 2.4" rot="0.0 -5.0 0.0" density="0.2" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Carpet"/>
+		<vox name="Carpet" pos="-2.8 0.4 2.95" rot="0.0 -5.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Carpet"/>
 		<voxbox name="Light_Bulb" pos="0.05 3.6 -1.2" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="30 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 			<light name="Light_Blue" pos="1.5 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="3 0.1" reach="15" unshadowed="0.1" fogscale="15"/>
 		</voxbox>
