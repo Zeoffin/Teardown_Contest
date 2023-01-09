@@ -1136,6 +1136,21 @@
 		<vox pos="0.0 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
 		<group name="Toilet_Booth" pos="2.8 0.4 0.5">
 			<vox pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Toilet_Walls"/>
+			<group name="Shower" pos="-5.75 0.0 -0.5" rot="0.0 90.0 0.0">
+				<vox pos="-0.05 0.0 0.0" rot="0.0 -90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Shower_Walls"/>
+				<vox pos="-0.95 0.1 0.4" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Shower_Door">
+					<joint name="hinge" pos="0.4 0.6 0.0" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0005" rotspring="0.001" limits="0 100"/>
+					<joint name="hinge" pos="0.4 1.95 0.0" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0005" rotspring="0.001" limits="0 100"/>
+				</vox>
+				<compound name="Shower_Head" pos="0.8 1.1 -0.2" density="1" strength="10" prop="true">
+					<voxbox name="Shower_Head" pos="0.05 0.0 0.0" rot="0.0 180.0 0.0" prop="true" size="1 4 1" material="metal" color="0.49 0.49 0.49"/>
+					<voxbox name="Shower_Head" pos="-0.1 0.3 0.0" rot="0.0 -180.0 0.0" prop="true" size="1 1 1" material="metal" color="0.66 0.66 0.66"/>
+					<rope pos="0.0 0.0 -0.05" color="0 0 0" slack="1">
+						<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+						<location pos="0.05 0.35 0.35" rot="0.0 0.0 0.0"/>
+					</rope>
+				</compound>
+			</group>
 			<vox pos="0.45 0.0 0.0" rot="0.0 -90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Toilet"/>
 			<vox pos="-0.05 1.15 -0.5" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Toilet_Paper_Hanger_Stacked"/>
 			<vox pos="-0.8 0.4 -0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Toilet_Doors">
@@ -1147,6 +1162,9 @@
 				<voxbox name="Lock" pos="-0.1 0.3 -0.1" rot="0.0 0.0 0.0" prop="true" size="1 1 1" material="metal" color="0.49 0.49 0.49"/>
 				<joint pos="0.05 0.0 0.0" type="hinge" collide="true" limits="-20 90"/>
 			</compound>
+			<voxbox name="Light_Bulb" pos="1.0 2.6 -0.7" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="14 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange" pos="0.7 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.5" size="1.4 0.1" reach="15" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
 		</group>
 		<group name="Toilet_Booth" pos="2.8 0.4 2.2">
 			<vox pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Toilet_Walls_1"/>
@@ -1161,7 +1179,40 @@
 				<voxbox name="Lock" pos="-0.1 0.3 -0.1" rot="0.0 0.0 0.0" prop="true" size="1 1 1" material="metal" color="0.49 0.49 0.49"/>
 				<joint pos="0.05 0.0 0.0" type="hinge" collide="true" limits="-20 90"/>
 			</compound>
+			<voxbox name="Light_Bulb" pos="1.0 2.6 -0.7" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="14 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+				<light name="Light_Orange" pos="0.7 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.5" size="1.4 0.1" reach="15" unshadowed="0.1" fogscale="10"/>
+			</voxbox>
 		</group>
+		<vox pos="0.6 1.15 4.6" rot="0.0 -180.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Sink"/>
+		<vox pos="-0.45 1.15 4.6" rot="0.0 -180.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Sink"/>
+		<voxbox name="Mirror" pos="-0.95 1.8 4.8" rot="0.0 0.0 0.0" density="1" strength="40" collide="true" size="19 7 1" material="glass" color="1.0 1.0 1.0" pbr="1 1 0 0 "/>
+		<voxbox name="Mirror_Light" pos="-0.85 1.9 4.9" rot="0.0 0.0 0.0" collide="true" size="17 5 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32 ">
+			<light name="Light_Orange" pos="0.85 0.0 0.05" rot="90.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="1.7 0.1" unshadowed="0.1" fogscale="10"/>
+			<light name="Light_Orange" pos="0.85 0.5 0.05" rot="-90.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="1.7 0.1" unshadowed="0.1" fogscale="10"/>
+			<light name="Light_Orange" pos="1.7 0.25 0.05" rot="0.0 90.0 -90.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.5 0.1" unshadowed="0.1" fogscale="10"/>
+			<light name="Light_Orange" pos="0.0 0.25 0.05" rot="0.0 270.0 -90.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.5 0.1" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<group name="Shower_Light" pos="0.0 2.9 -2.2">
+			<voxbox name="Light_Bulb" pos="-3.2 0.7 2.35" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="0.4 0.1" reach="15" unshadowed="0.1" fogscale="40"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-3.2 0.7 2.05" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="0.4 0.1" reach="15" unshadowed="0.1" fogscale="40"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-3.2 0.7 2.05" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="0.4 0.1" reach="15" unshadowed="0.1" fogscale="40"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-2.7 0.7 2.05" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="0.4 0.1" reach="15" unshadowed="0.1" fogscale="40"/>
+			</voxbox>
+		</group>
+		<vox pos="-2.8 0.4 2.4" rot="0.0 -5.0 0.0" density="0.2" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Carpet"/>
+		<voxbox name="Light_Bulb" pos="0.05 3.6 -1.2" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="30 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" pos="1.5 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="3 0.1" reach="15" unshadowed="0.1" fogscale="15"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.05 3.6 1.8" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="30 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" pos="1.5 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="3 0.1" reach="15" unshadowed="0.1" fogscale="15"/>
+		</voxbox>
 	</group>
 	<group name="Utility_Room" tags="utilityRoom" pos="23.4 0.1 16.9">
 		<vox pos="-1.8 0.0 1.5" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
