@@ -82,7 +82,7 @@ function findHoles()
 				--- Ray tracing loop
 				for rayTracingLimits=1,4 do
 
-					hit, dist, normal = QueryRaycast(rayPosition,rotatedVector,50)
+					hit, dist, normal = QueryRaycast(rayPosition,rotatedVector,200)
 					endpoint = VecAdd(rayPosition, VecScale(rotatedVector, dist))
 					--DrawLine(rayPosition, endpoint, 1, 0, 0)
 
@@ -90,7 +90,7 @@ function findHoles()
 					for secondScanner, roomTrigger in pairs(scannerTriggerTable) do
 
 						if (IsPointInTrigger(roomTrigger, endpoint) or IsPointInTrigger(roomTrigger, rayPosition)) and scanner ~= secondScanner then
-							DebugCross(endpoint, 1,0,0)		-- Draw rays that are outside its parent trigger
+							--DebugCross(endpoint, 0,1,0)		-- Draw rays that are outside its parent trigger
 							table.insert(leakingRooms, roomTrigger)
 						end
 
@@ -196,7 +196,7 @@ function setDecompression(dt)
 			SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,playerPressureSpeed)))
 		end
 
-		hit, dist = QueryRaycast(pos,dir,10)
+		hit, dist = QueryRaycast(pos,dir,200)
 		if hit then
 			activeTimeList[p] = activeTimeList[p] + dt
 			if activeTimeList[p] > 5 then
