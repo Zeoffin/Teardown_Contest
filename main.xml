@@ -3578,9 +3578,34 @@
 			<vox tags="explosive=0.4" pos="0.0 0.2 0.05" rot="0.0 0.0 0.0" desc="Oxygen -M" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
 		</vox>
 	</group>
-	<voxbox name="Hole" pos="4.2 1.5 20.1" rot="0.0 90.0 0.0" size="3 14 20" brush="hole"/>
-	<vox pos="5.2 1.5 20.0" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_Cables">
-		<light name="Light_Orange_Bright" pos="0.0 0.95 0.45" rot="-180.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.1" fogscale="10"/>
-	</vox>
+	<group name="Decor" pos="5.2 1.5 20.0">
+		<voxbox name="Hole" pos="-1.0 0.0 0.1" rot="0.0 90.0 0.0" size="3 14 20" brush="hole"/>
+		<vox pos="-0.0 0.0 0.0" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_Cables">
+			<light name="Light_Orange_Bright" pos="0.0 0.95 0.45" rot="-180.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.1" fogscale="10"/>
+		</vox>
+		<voxbox name="Hole" pos="-1.1 -1.3 -3.0" rot="0.0 90.0 90.0" size="3 13 20" brush="hole"/>
+		<vox pos="-0.1 -1.2 -3.0" rot="0.0 90.0 90.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light">
+			<voxbox name="Light_Bulb" pos="0.0 0.3 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="0.0 0.5 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.0 0.9 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.0 1.1 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+			</voxbox>
+		</vox>
+		<vox pos="-0.1 -1.1 -2.3" rot="0.0 90.0 90.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light_Door">
+			<joint name="hinge" pos="0.1 0.5 0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+			<joint name="hinge" pos="0.1 0.5 -0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+		</vox>
+		<vox pos="-0.1 -1.1 -2.4" rot="0.0 270.0 90.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light_Door">
+			<joint name="hinge" pos="0.1 0.5 0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+			<joint name="hinge" pos="0.1 0.5 -0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+		</vox>
+	</group>
 </scene>
 
