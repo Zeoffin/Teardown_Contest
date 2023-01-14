@@ -1616,7 +1616,7 @@
 					<voxbox name="Light_Bulb" tags="doorControlLight red" pos="-0.1 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
 						<light name="Light_Red" tags="doorControlLight red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 					</voxbox>
-					<screen name="doorControl" tags="doorControl" pos="0.0 1.35 -0.2" size="0.2 0.3 0.1"/>
+					<screen name="doorControl" tags="doorControl" pos="0.0 1.35 -0.2" size="0.2 0.3 0.1" script="MOD/scripts/doors/regularDoorScreen.lua"/>
 				</vox>
 				<vox tags="regularDoor" pos="-1.0 0.4 -1.4" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door">
 					<joint name="door slider" pos="0.0 2.9 -0.8" rot="0.0 0.0 0.0" type="prismatic" size="0.2" limits="0 1.1"/>
