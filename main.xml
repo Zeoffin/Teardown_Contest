@@ -1554,7 +1554,7 @@
 			</voxbox>
 		</vox>
 		<group name="Corridor_Doorframe" pos="-3.6 0.0 -0.3" rot="0.0 90.0 0.0">
-			<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="1.8 0.0 -1.4" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame" scale="1">
 				<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 					<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 					<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1566,7 +1566,7 @@
 					<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 				</voxbox>
 			</vox>
-			<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame">
+			<vox pos="-1.8 0.0 -1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door_Frame" scale="1">
 				<voxbox name="Light_Bulb" pos="0.1 2.9 1.4" rot="90.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 21" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
 					<light name="Light_Red" pos="0.15 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
 					<light name="Light_Red" pos="0.05 0.05 1.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.09 0.09" scale="0.5" size="2 0.05" unshadowed="0.1" fogscale="5"/>
@@ -1577,15 +1577,6 @@
 				<voxbox name="Light_Bulb" pos="-0.4 0.29999 -0.90001" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 				</voxbox>
-				<vox pos="-0.9 0.4 0.1" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Big">
-					<voxbox name="Big_Door_Screen" pos="0.1 1.2 -0.1" rot="0.0 -180.0 0.0" collide="true" size="2 3 1" color="0.11 0.11 0.11"/>
-					<voxbox name="Light_Bulb" pos="0.2 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
-						<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
-					</voxbox>
-					<voxbox name="Light_Bulb" pos="-0.1 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
-						<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
-					</voxbox>
-				</vox>
 			</vox>
 			<vox pos="1.8 0.0 1.8" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Wall_flat_4_Door_Frame">
 				<voxbox name="Light_Bulb" pos="-0.2 3.0 1.3" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
@@ -1609,21 +1600,27 @@
 			</vox>
 			<script file="MOD/scripts/doors/regularDoors.lua">
 				<vox pos="1.9 0.4 -0.5" rot="0.0 180.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Big">
-					<voxbox name="Big_Door_Screen" pos="0.1 1.2 -0.1" rot="0.0 -180.0 0.0" collide="true" size="2 3 1" color="0.11 0.11 0.11"/>
 					<voxbox name="Light_Bulb" tags="doorControlLight green" pos="0.2 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
 						<light name="Light_Green" tags="doorControlLight green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 					</voxbox>
 					<voxbox name="Light_Bulb" tags="doorControlLight red" pos="-0.1 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
 						<light name="Light_Red" tags="doorControlLight red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 					</voxbox>
-					<screen name="doorControl" tags="doorControl" pos="0.0 1.35 -0.2" size="0.2 0.3 0.1" script="MOD/scripts/doors/regularDoorScreen.lua"/>
+					<voxbox name="Big_Door_Button" tags="doorButton interact=Doors" pos="-0.1 1.2 -0.2" rot="0.0 0.0 0.0" collide="true" size="2 3 1" color="0.11 0.11 0.11"/>
 				</vox>
-				<vox tags="regularDoor" pos="-1.0 0.4 -1.4" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door">
-					<joint name="door slider" pos="0.0 2.9 -0.8" rot="0.0 0.0 0.0" type="prismatic" size="0.2" limits="0 1.1"/>
+				<vox tags="regularDoor" pos="-1.0 0.4 -1.4" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+				<vox tags="regularDoor" pos="1.0 0.4 -1.4" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door"/>
+				<vox pos="-1.9 0.4 -2.3" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Big">
+					<voxbox name="Big_Door_Button" tags="doorButton interact=Doors" pos="0.1 1.2 -0.1" rot="0.0 -180.0 0.0" collide="true" size="2 3 1" color="0.11 0.11 0.11"/>
+					<voxbox name="Light_Bulb" pos="0.2 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
+						<light name="Light_Green" tags="doorControlLight green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
+					</voxbox>
+					<voxbox name="Light_Bulb" pos="-0.1 1.5 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+						<light name="Light_Red" tags="doorControlLight red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
+					</voxbox>
 				</vox>
-				<vox tags="regularDoor" pos="1.0 0.4 -1.4" rot="0.0 90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Door">
-					<joint name="door slider" pos="0.0 2.9 -0.8" rot="0.0 0.0 0.0" type="prismatic" size="0.2" limits="0 1.1"/>
-				</vox>
+				<joint name="door slider" tags="doorJoint" pos="-0.2 3.2 -1.4" rot="0.0 -90.0 0.0" type="prismatic" size="0.2" limits="-0.05 2"/>
+				<joint name="door slider" tags="doorJoint" pos="0.2 3.2 -1.4" rot="0.0 90.0 0.0" type="prismatic" size="0.2" limits="-0.05 2"/>
 			</script>
 		</group>
 		<location name="airScanner" tags="airScanner" pos="-1.2 1.4 -0.4" rot="0.0 0.0 0.0"/>
@@ -3578,34 +3575,9 @@
 			<vox tags="explosive=0.4" pos="0.0 0.2 0.05" rot="0.0 0.0 0.0" desc="Oxygen -M" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
 		</vox>
 	</group>
-	<group name="Decor" pos="5.2 1.5 20.0">
-		<voxbox name="Hole" pos="-1.0 0.0 0.1" rot="0.0 90.0 0.0" size="3 14 20" brush="hole"/>
-		<vox pos="-0.0 0.0 0.0" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_Cables">
-			<light name="Light_Orange_Bright" pos="0.0 0.95 0.45" rot="-180.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.1" fogscale="10"/>
-		</vox>
-		<voxbox name="Hole" pos="-1.1 -1.3 -3.0" rot="0.0 90.0 90.0" size="3 13 20" brush="hole"/>
-		<vox pos="-0.1 -1.2 -3.0" rot="0.0 90.0 90.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light">
-			<voxbox name="Light_Bulb" pos="0.0 0.3 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="0.0 0.5 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.0 0.9 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.0 1.1 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
-			</voxbox>
-		</vox>
-		<vox pos="-0.1 -1.1 -2.3" rot="0.0 90.0 90.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light_Door">
-			<joint name="hinge" pos="0.1 0.5 0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
-			<joint name="hinge" pos="0.1 0.5 -0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
-		</vox>
-		<vox pos="-0.1 -1.1 -2.4" rot="0.0 270.0 90.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light_Door">
-			<joint name="hinge" pos="0.1 0.5 0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
-			<joint name="hinge" pos="0.1 0.5 -0.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
-		</vox>
-	</group>
+	<voxbox name="Hole" pos="4.2 1.5 20.1" rot="0.0 90.0 0.0" size="3 14 20" brush="hole"/>
+	<vox pos="5.2 1.5 20.0" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_Cables">
+		<light name="Light_Orange_Bright" pos="0.0 0.95 0.45" rot="-180.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.1" fogscale="10"/>
+	</vox>
 </scene>
 

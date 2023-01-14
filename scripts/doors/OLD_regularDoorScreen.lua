@@ -1,16 +1,18 @@
 
 function init()
 
-
+    UiMakeInteractive()
 
 end
 
 function tick()
 
-    screen = UiGetScreen()
+    --screen = UiGetScreen()
+
+    DebugPrint(screen)
 
     if screen ~= nill then
-        DebugPrint("durvis?")
+        --DebugPrint("durvis?")
     end
 
 end
@@ -20,5 +22,6 @@ function draw()
     UiTranslate(UiCenter(), UiMiddle())
     UiAlign("center middle")
     UiRect(100,100)
+    UiPush()
 end
 
