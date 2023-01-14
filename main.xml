@@ -3578,5 +3578,9 @@
 			<vox tags="explosive=0.4" pos="0.0 0.2 0.05" rot="0.0 0.0 0.0" desc="Oxygen -M" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
 		</vox>
 	</group>
+	<voxbox name="Hole" pos="4.2 1.5 20.1" rot="0.0 90.0 0.0" size="3 14 20" brush="hole"/>
+	<vox pos="5.2 1.5 20.0" rot="0.0 90.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_Cables">
+		<light name="Light_Orange_Bright" pos="0.0 0.95 0.45" rot="-180.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.1" fogscale="10"/>
+	</vox>
 </scene>
 
