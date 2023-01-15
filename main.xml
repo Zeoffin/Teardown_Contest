@@ -3445,161 +3445,271 @@
 		</vox>
 	</group>
 	<group name="Accent_Lights" pos="0.5 0.5 11.6" rot="0.0 0.0 0.0">
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-0.1 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-0.1 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="7.0 0.0 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="7.0 0.0 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="7.1 3.1 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="7.1 3.1 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="5.8 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="5.8 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="5.8 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="5.8 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="7.0 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="7.0 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="7.1 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="7.1 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="13.5 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="13.5 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="3.4 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="3.4 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.9 0.0 15.2" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.9 0.0 15.2" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-10.7 0.0 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-10.7 0.0 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-10.7 3.1 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-10.7 3.1 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="3.5 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="3.5 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.9 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="9.9 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.8 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="9.8 0.0 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.9 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="9.9 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.9 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="9.9 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="15.8 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="15.8 3.1 -0.8" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.8" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="17.2 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="17.2 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="14.4 3.0 -34.2" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="14.4 3.0 -34.2" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-18.5 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-18.5 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-1.5 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-1.5 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 30" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.5" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.9 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="11.4 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="11.4 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="13.5 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="13.5 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="15.8 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="15.8 0.0 -0.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 18" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.9" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="1.7 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="3.5 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="3.5 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="1.4 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="1.4 3.0 -2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="1.4 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="1.4 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="3.5 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="3.5 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="13.5 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="13.5 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="11.4 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="11.4 3.0 -3.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="11.4 3.0 -32.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="11.4 3.0 -32.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="13.5 3.0 -32.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="13.5 3.0 -32.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-18.4 3.1 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-18.4 3.1 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-18.4 0.0 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-18.4 0.0 14.9" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 54" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 2.7" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="5.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 3.1 9.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 3.1 9.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 3.1 15.2" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 3.1 15.2" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 3.1 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 3.1 2.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 3.1 0.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 3.1 0.8" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-0.1 3.1 8.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 3.1 9.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-0.1 3.1 9.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 7.2 -13.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 7.2 -13.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 7.2 -19.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 7.2 -19.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.9 4.1 -19.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.9 4.1 -19.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 26" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.3" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.5 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-15.8 7.2 -12.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-15.8 7.2 -12.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 24" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 1.2" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="2.3 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-17.2 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-17.2 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-17.1 3.0 6.5" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-17.1 3.0 6.5" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-2.7 3.0 6.5" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-2.7 3.0 6.5" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-2.8 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" tags="emergencyLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="-2.8 3.0 3.5" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 		</voxbox>
-		<voxbox name="Light_Bulb" tags="emergencyLight" pos="14.75 3.2 9.2" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="30 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="Light_Blue" pos="1.5 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="3 0.1" reach="15" unshadowed="0.1" fogscale="15"/>
+		<voxbox name="Light_Bulb" tags="accentLight" pos="14.75 3.2 9.2" rot="90.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="30 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="Light_Blue" tags="accentLight" pos="1.5 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="3 0.1" reach="15" unshadowed="0.1" fogscale="15"/>
+		</voxbox>
+	</group>
+	<group name="Emergency_Light" pos="7.5 1.2 19.8">
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="0.0 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.9 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-3.6 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-4.5 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-7.2 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-8.1 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-8.1 1.4 -6.3" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-8.6 2.0 -4.4" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-8.6 2.0 -1.9" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="1.9 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="2.8 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="5.5 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="6.4 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.1 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="10.0 1.4 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="10.0 1.4 -6.3" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.1 1.4 -7.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.1 1.4 -9.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="9.1 1.4 -10.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="2.8 1.4 -10.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="2.8 1.4 -9.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="2.8 1.4 -7.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="1.9 1.4 -6.3" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="0.0 1.4 -6.3" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.9 1.4 -7.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.9 1.4 -9.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.9 1.4 -10.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-7.2 1.4 -10.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-7.2 1.4 -9.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-7.2 1.4 -7.2" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="10.5 2.0 -1.9" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="10.5 2.0 -4.4" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-2.8 2.0 -10.5" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="-5.3 2.0 -10.5" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="7.2 2.0 -10.5" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" tags="emergencyLight" pos="4.7 2.0 -10.5" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
 		</voxbox>
 	</group>
 </scene>

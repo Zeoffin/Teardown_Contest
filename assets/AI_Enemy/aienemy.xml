@@ -1,0 +1,24 @@
+<scene version="1.3.0">
+	<vox name="Body" density="1" strength="2" collide="true" prop="true" file="MOD/main/AI_Enemy.vox" object="Body"/>
+	<vox name="Head" pos="-0.5 0.0 0.0" density="1" strength="2" collide="true" prop="true" file="MOD/main/AI_Enemy.vox" object="Head">
+		<joint name="Joint" pos="0.2 0.15 -0.05" rot="-90.0 0.0 0.0" type="hinge" limits="-45 45"/>
+	</vox>
+	<vox name="Tail" pos="0.5 0.0 0.0" density="1" strength="2" prop="true" file="MOD/main/AI_Enemy.vox" object="Tail">
+		<joint name="Joint" pos="-0.2 0.1 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
+	</vox>
+	<group name="Legs" pos="0.0 -0.1 0.0">
+		<vox name="Leg" pos="0.2 0.0 0.3" rot="0.0 -180.0 0.0" density="1" strength="2" prop="true" file="MOD/main/AI_Enemy.vox" object="Leg">
+			<joint name="Joint" pos="0.05 0.3 0.1" rot="0.0 90.0 0.0" type="hinge" limits="-45 45"/>
+		</vox>
+		<vox name="Leg" pos="0.1 0.0 -0.4" density="1" strength="2" prop="true" file="MOD/main/AI_Enemy.vox" object="Leg">
+			<joint name="Joint" pos="0.05 0.3 0.1" rot="0.0 90.0 0.0" type="hinge" limits="-45 45"/>
+		</vox>
+		<vox name="Leg" pos="-0.2 0.0 -0.4" density="1" strength="2" prop="true" file="MOD/main/AI_Enemy.vox" object="Leg">
+			<joint name="Joint" pos="0.05 0.3 0.1" rot="0.0 90.0 0.0" type="hinge" limits="-45 45"/>
+		</vox>
+		<vox name="Leg" pos="-0.1 0.0 0.3" rot="0.0 -180.0 0.0" density="1" strength="2" prop="true" file="MOD/main/AI_Enemy.vox" object="Leg">
+			<joint name="Joint" pos="0.05 0.3 0.1" rot="0.0 90.0 0.0" type="hinge" limits="-45 45"/>
+		</vox>
+	</group>
+</scene>
+
