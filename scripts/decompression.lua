@@ -5,7 +5,7 @@ emergencyStatus = false
 
 starCount = 24     													-- Number of star directions
 bodyPressureSpeed = 0.5												-- Force on the bodies
-playerPressureSpeed = 0.01											-- Force on the player
+playerPressureSpeed = 0.08											-- Force on the player
 starTracingLimit = 4												-- Number of times ray bounces off surface
 
 -- RGB values for emergency light color and normal color
@@ -138,7 +138,6 @@ function findHoles()
 
 end
 
-
 function setDecompression(dt)
 	--- Sets the decompression effect when hole(s) are detected in the walls and further leakage has been found
 
@@ -150,23 +149,26 @@ function setDecompression(dt)
 
 	-- Decompression
 	for p in pairs(activeHolesList) do
-		local pos = activeHolesList[p]
-		local dir = activeDirList[p]
 
-		--DebugLine(pos,VecAdd(pos,dir),1,0,0) --debug active holes
+		local holePosition = activeHolesList[p]
+		local holeDirection = activeDirList[p]
+		local offsetPosition = VecAdd(holePosition,VecScale(holeDirection,10))			-- Offset the position of the hole
 
-		decompressionParticles()	-- Set particle effect
+		local playerNearLeak = false
 
-		local holepos = VecAdd(pos,VecScale(dir,5))		-- Nezinu wtf
+		playerTransform = GetPlayerTransform()
+		playerHoleDirection = VecSub(offsetPosition, playerTransform.pos)			-- Get current direction to hole
+
+		decompressionParticles()														-- Set particle effect
 
 		-- Loop through rooms which have air leaks
 		for roomTrigger, holesMap in pairs(triggerHolesMap) do
 
-			-- Bound boxes of the room trigger
-			local boundMin, boundMax = GetTriggerBounds(roomTrigger)
+			local boundMin, boundMax = GetTriggerBounds(roomTrigger)					-- Bound boxes of the room trigger
 
-			-- Remove fire in the original room
-			extinguishFire(boundMin, boundMax)
+			playerNearLeakingRoom = false												-- If player in leaking room
+
+			extinguishFire(boundMin, boundMax)											-- Remove fire in the original room
 
 			-- Query for bodies only within the trigger of that room
 			bodies = QueryAabbBodies(boundMin, boundMax)
@@ -175,13 +177,18 @@ function setDecompression(dt)
 			if triggerToTriggerLeaks[roomTrigger] ~= nil then
 
 				local leakingRoomsTable = triggerToTriggerLeaks[roomTrigger]
-				DebugPrint(string.format("Leaking room count: %d", table.getn(leakingRoomsTable)))
+				--DebugPrint(string.format("Leaking room count: %d", table.getn(leakingRoomsTable)))
 
 				for index, leakingRoom in pairs(leakingRoomsTable) do
 					local leakingMin, leakingMax = GetTriggerBounds(leakingRoom)
 
-					extinguishFire(boundMin, boundMax)							-- Remove fire in leaking rooms
-					otherBodies = QueryAabbBodies(leakingMin, leakingMax)		-- Get leaking room's bodies
+					extinguishFire(boundMin, boundMax)									-- Remove fire in leaking rooms
+					otherBodies = QueryAabbBodies(leakingMin, leakingMax)				-- Get leaking room's bodies
+
+					-- If player in leaking room, pull to hole
+					if IsPointInTrigger(leakingRoom, playerTransform.pos) then
+						playerNearLeakingRoom = true
+					end
 
 					for x, otherBody in pairs(otherBodies) do
 						table.insert(bodies, otherBody)
@@ -191,24 +198,25 @@ function setDecompression(dt)
 
 			end
 
+			-- If player in the original room
+			if IsPointInTrigger(roomTrigger, playerTransform.pos) then
+				playerNearLeak = true
+			end
+
 			-- Apply body impulse towards the hole
 			for b, body in pairs(bodies) do
 				QueryRejectBody(body)
 				local bodyCenter = TransformToParentPoint(GetBodyTransform(body),GetBodyCenterOfMass(body))
-				ApplyBodyImpulse(body,bodyCenter,VecScale(VecSub(holepos,bodyCenter),bodyPressureSpeed))
+				ApplyBodyImpulse(body,bodyCenter,VecScale(VecSub(offsetPosition,bodyCenter),bodyPressureSpeed))
 			end
 
 		end
 
-		local ptrans = GetPlayerTransform()			-- Get player transform
-		local vec = VecSub(holepos,ptrans.pos)		-- If player in the trigger(s)
-
-		--- TODO: Saprast, kas te nahuj notiek
-		if VecLength(vec) < 20 then
-			SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,playerPressureSpeed)))
+		if (playerNearLeak or playerNearLeakingRoom) and VecLength(playerHoleDirection) < 20 then
+			SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(holeDirection,playerPressureSpeed)))
 		end
 
-		hit, dist = QueryRaycast(pos,dir,200)
+		hit, dist = QueryRaycast(holePosition, holeDirection,200)
 		if hit then
 			activeTimeList[p] = activeTimeList[p] + dt
 			if activeTimeList[p] > 5 then
@@ -287,6 +295,7 @@ function setEmergencyLights(emergency, dt)
 
 	else
 
+		--- TODO: Setup lights correctly when disabling the emergency system
 		for index, light in pairs(emergencyLights) do
 			SetLightColor(light, normalLighting[1],normalLighting[2],normalLighting[3])
 		end
@@ -299,5 +308,4 @@ function extinguishFire(min, max)
 	--- When decompression happens in a room, the fire will be extinguished as it lacks oxygen in
 	--- that particular room.
 	RemoveAabbFires(min, max)
-
 end
