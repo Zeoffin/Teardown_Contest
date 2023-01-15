@@ -1,4 +1,4 @@
---- Starting point when loading in the mod initially
+--- Main script
 
 function init()
     sanitizeDoorLights()
@@ -9,10 +9,18 @@ function tick()
 end
 
 function sanitizeDoorLights()
-    --- Turns off all door control lights at the beginning because API is dogshit
+    --- Turns off all door control lights at the beginning because the fucking lights can't be turned off in any
+    --- other way at the beginning of the level
 
-    allLights = FindLights('doorControlLight', true)
-    for idx, lightSource in pairs(allLights) do
+    doorLights = FindLights('doorControlLight', true)
+    emergencyLights = FindLights('emergencyLight', true)
+
+    for index, lightSource in pairs(doorLights) do
         SetLightEnabled(lightSource, false)
     end
+
+    for index, lightSource in pairs(emergencyLights) do
+        SetLightEnabled(lightSource, false)
+    end
+
 end

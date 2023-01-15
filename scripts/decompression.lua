@@ -1,35 +1,48 @@
 --- File that deals with the airScanners to check for holes in the spaceship and apply the effect of decompression
---- Thanks to the guy who wrote Boeing 737 mod for the idea
+--- Thanks to the guy who wrote Boeing 737 mod for the idea <3
 
---- TODO: Query everything with tag rayCanPass to set as rejectBody
+emergencyStatus = false
 
-starCount = 24     											--- Number of star directions
-bodyPressureSpeed = 0.5
-playerPressureSpeed = 0.01
+starCount = 24     													-- Number of star directions
+bodyPressureSpeed = 0.5												-- Force on the bodies
+playerPressureSpeed = 0.01											-- Force on the player
+starTracingLimit = 4												-- Number of times ray bounces off surface
+
+-- RGB values for emergency light color and normal color
+emergencyLighting = {1,0,0}
+normalLighting = {0.42, 0.75, 1.0}
+
+emergencyLightFreq = 0.8
 
 function init()
+	--- TEARDOWN INIT FUNCTION
 
-	scanners = FindLocations("airScanner", true)	            	--- Locations of the scanners
-	roomTriggers = FindTriggers('airTrigger', true)
+	scanners = FindLocations("airScanner", true)	            	-- Locations of the scanners (global)
+	roomTriggers = FindTriggers('airTrigger', true)					-- All triggers (global)
 
-	pressure = true                                 					--- Pressure
-	activeHolesList = {}                              --- so that each hole can be saved and constantly checked
-	activeDirList = {}                              --- List of all direction scanning
-	activeTimeList = {}                             --- smt ?
-	scannerTriggerTable = {}						--- scanner: trigger     K:V
+	accentLights = FindLights('accentLight', true)					-- Get all accent lights (global)
+	accentLightsShapes = FindLights('accentLight', true)			-- Get all accent light shapes (global)
+
+	emergencyLights = FindLights('emergencyLight', true)			-- Get all emergency lights (global)
+	emergencyLightsShapes = FindShapes('emergencyLight', true)		-- Get all shapes of emergency lights (global)
+
+	pressure = true                                 				-- Pressure
+	activeHolesList = {}                              				-- List of all holes
+	activeDirList = {}                              				-- List of all direction scanning
+	activeTimeList = {}                             				-- smt ?
+	scannerTriggerTable = {}										-- Hash table in form {scanner: trigger}
 	triggerToTriggerLeaks = {}
-	activated = false --changes when everything activates
-	--losePressure = not GetBool("savegame.mod.cabin.depressurize_inf",false)
+	activated = false 												-- Changes when everything activates
 	timer = 0
 	rotationVal = 0
 
-	--- Map scanners to triggers
-	mapScannerToTrigger(scannerTriggerTable)
+	mapScannerToTrigger(scannerTriggerTable)						-- Map each scanner to a trigger
 
 end
 
 
 function tick(dt)
+	--- TEARDOWN TICK FUNCTION
 
 	if pressure then
 
@@ -40,18 +53,19 @@ function tick(dt)
 
 end
 
---- Find holes to the space by shooting rays in rooms and checking if the ray hits a wall
-function findHoles()
 
+function findHoles()
+	--- Find holes in the space station by shooting rays in rooms and checking if the ray hits a wall
+
+	-- Deals with the speed of the rays
 	if rotationVal ~=360 then
 		rotationVal =  rotationVal + 2
 	else
 		rotationVal = 0
 	end
 
-	-- Trigger : TableOfHoles
-	triggerHolesMap = {}
-	triggerToTriggerLeaks = {}
+	triggerHolesMap = {}			-- Hash map {Trigger : TableOfHoles}
+	triggerToTriggerLeaks = {}		-- Hash map {Trigger : [Trigger]}
 
 	i = 0 --raycast counter
 
@@ -79,14 +93,14 @@ function findHoles()
 
 				i = i + 1
 
-				--- Ray tracing loop
-				for rayTracingLimits=1,4 do
+				-- Ray tracing loop
+				for rayTracingLimits=1, starTracingLimit do
 
 					hit, dist, normal = QueryRaycast(rayPosition,rotatedVector,200)
 					endpoint = VecAdd(rayPosition, VecScale(rotatedVector, dist))
-					--DrawLine(rayPosition, endpoint, 1, 0, 0)
+					--DrawLine(rayPosition, endpoint, 1, 0, 0)		-- Draws the rays
 
-					--- Detect if the ray is leaking from one room trigger to another
+					-- Detect if the ray is leaking from one room trigger to another
 					for secondScanner, roomTrigger in pairs(scannerTriggerTable) do
 
 						if (IsPointInTrigger(roomTrigger, endpoint) or IsPointInTrigger(roomTrigger, rayPosition)) and scanner ~= secondScanner then
@@ -96,8 +110,10 @@ function findHoles()
 
 					end
 
+					-- Check for a hole here
 					if not hit then
 						DebugPrint("FOUND HOLE")
+						emergencyStatus = true
 						activeHolesList[i] = rayPosition
 						activeDirList[i] = rotatedVector
 						activeTimeList[i] = 0
@@ -111,13 +127,7 @@ function findHoles()
 				end
 			end
 
-			--local count = 0
-			--for _ in pairs(leakingRooms) do count = count + 1 end
-			--DebugPrint(string.format("Leak2: %d", count))
-
-			-- Set trigger to trigger leakage map
-			--- Basically vajag likt tikai tad, ja ir tukss... ?
-
+			-- Set the new values only if leakage exists
 			if table.getn(leakingRooms) > 0 then
 				triggerToTriggerLeaks[scannerTriggerTable[scanner]] = leakingRooms
 			end
@@ -130,33 +140,33 @@ end
 
 
 function setDecompression(dt)
+	--- Sets the decompression effect when hole(s) are detected in the walls and further leakage has been found
 
-	--- Decompression
+	--DebugPrint(string.format("Number of holes: %d", #triggerHolesMap))
+
+	if emergencyStatus then
+		emergencySystem(emergencyStatus, dt)
+	end
+
+	-- Decompression
 	for p in pairs(activeHolesList) do
 		local pos = activeHolesList[p]
 		local dir = activeDirList[p]
 
 		--DebugLine(pos,VecAdd(pos,dir),1,0,0) --debug active holes
 
-		ParticleReset()
-		ParticleColor(0.9,0.9,0.9)
-		ParticleRadius(1)
-		ParticleType("plain")
-		ParticleAlpha(0.25,0.0, "easeout")
-		ParticleCollide(0)
+		decompressionParticles()	-- Set particle effect
 
-		if math.random(1,10) > 8 then
-			local velocity = math.random(-6,6)
-			SpawnParticle(VecAdd(pos,Vec(0,0,math.random(-5,5))),Vec(0,0,velocity),1)
-		end
-
-		local holepos = VecAdd(pos,VecScale(dir,5))		--- Nezinu wtf
+		local holepos = VecAdd(pos,VecScale(dir,5))		-- Nezinu wtf
 
 		-- Loop through rooms which have air leaks
 		for roomTrigger, holesMap in pairs(triggerHolesMap) do
 
 			-- Bound boxes of the room trigger
 			local boundMin, boundMax = GetTriggerBounds(roomTrigger)
+
+			-- Remove fire in the original room
+			extinguishFire(boundMin, boundMax)
 
 			-- Query for bodies only within the trigger of that room
 			bodies = QueryAabbBodies(boundMin, boundMax)
@@ -165,12 +175,13 @@ function setDecompression(dt)
 			if triggerToTriggerLeaks[roomTrigger] ~= nil then
 
 				local leakingRoomsTable = triggerToTriggerLeaks[roomTrigger]
-				DebugPrint("LEAKING ROOMS NOT NILL")
 				DebugPrint(string.format("Leaking room count: %d", table.getn(leakingRoomsTable)))
 
 				for index, leakingRoom in pairs(leakingRoomsTable) do
 					local leakingMin, leakingMax = GetTriggerBounds(leakingRoom)
-					otherBodies = QueryAabbBodies(leakingMin, leakingMax)
+
+					extinguishFire(boundMin, boundMax)							-- Remove fire in leaking rooms
+					otherBodies = QueryAabbBodies(leakingMin, leakingMax)		-- Get leaking room's bodies
 
 					for x, otherBody in pairs(otherBodies) do
 						table.insert(bodies, otherBody)
@@ -180,7 +191,7 @@ function setDecompression(dt)
 
 			end
 
-			-- Apply impulse towards the hole
+			-- Apply body impulse towards the hole
 			for b, body in pairs(bodies) do
 				QueryRejectBody(body)
 				local bodyCenter = TransformToParentPoint(GetBodyTransform(body),GetBodyCenterOfMass(body))
@@ -189,9 +200,10 @@ function setDecompression(dt)
 
 		end
 
-		local ptrans = GetPlayerTransform()
-		local vec = VecSub(holepos,ptrans.pos)	--- If player in the trigger(s)
+		local ptrans = GetPlayerTransform()			-- Get player transform
+		local vec = VecSub(holepos,ptrans.pos)		-- If player in the trigger(s)
 
+		--- TODO: Saprast, kas te nahuj notiek
 		if VecLength(vec) < 20 then
 			SetPlayerVelocity(VecAdd(GetPlayerVelocity(),VecScale(dir,playerPressureSpeed)))
 		end
@@ -208,19 +220,14 @@ function setDecompression(dt)
 
 end
 
-
-function setTriggerToTriggerLeakMap()
-
-end
-
-
---- Map a scanner object to a trigger object
 function mapScannerToTrigger(scannerTriggerTable)
+	--- Map a scanner object to a trigger object
+
 	for scannerIndex, scanner in pairs(scanners) do
 
-		scannerPosition = GetLocationTransform(scanner).pos          --- Positional vector of the scanner
+		scannerPosition = GetLocationTransform(scanner).pos          -- Positional vector of the scanner
 
-		--- Find the corresponding room trigger that the scanner is in and map them
+		-- Find the corresponding room trigger that the scanner is in and map them
 		for triggerIndex, trigger in pairs(roomTriggers) do
 			if IsPointInTrigger(trigger, scannerPosition) then
 				scannerTriggerTable[scanner] = trigger
@@ -228,4 +235,69 @@ function mapScannerToTrigger(scannerTriggerTable)
 		end
 
 	end
+end
+
+function decompressionParticles()
+	--- Generates particles in the hole
+
+	ParticleReset()
+	ParticleColor(0.9,0.9,0.9)
+	ParticleRadius(1)
+	ParticleType("plain")
+	ParticleAlpha(0.25,0.0, "easeout")
+	ParticleCollide(0)
+
+	if math.random(1,10) > 8 then
+		local velocity = math.random(-6,6)
+		SpawnParticle(VecAdd(pos,Vec(0,0,math.random(-5,5))),Vec(0,0,velocity),1)
+	end
+
+end
+
+function emergencySystem(emergency, dt)
+	--- Sets the global emergency system enabled / disabled
+	setEmergencyLights(emergency, dt)
+end
+
+function setEmergencyLights(emergency, dt)
+	--- Sets the accent lights according to if emergency is in progress or not
+
+	if emergency then
+
+		-- Turn off accent lights
+		for index, light in pairs(accentLights) do
+			SetLightEnabled(light, false)
+		end
+
+		-- Turn off emission from accent light shapes
+		for index, lightShape in pairs(accentLightsShapes) do
+			SetShapeEmissiveScale(lightShape, 0)
+		end
+
+		-- Change light color to red in emergency
+		for index, light in pairs(emergencyLights) do
+			SetLightColor(light, emergencyLighting[1],emergencyLighting[2],emergencyLighting[3])
+		end
+
+		-- Set the light to pulsate
+		for index, lightShape in pairs(emergencyLightsShapes) do
+			local scale = math.sin(GetTime())*emergencyLightFreq + 1
+			SetShapeEmissiveScale(lightShape, scale)
+		end
+
+	else
+
+		for index, light in pairs(emergencyLights) do
+			SetLightColor(light, normalLighting[1],normalLighting[2],normalLighting[3])
+		end
+
+	end
+
+end
+
+function extinguishFire(min, max)
+	--- When decompression happens in a room, the fire will be extinguished as it lacks oxygen in
+	--- that particular room.
+	RemoveAabbFires(min, max)
+
 end
