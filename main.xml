@@ -1,5 +1,5 @@
 <scene version="1.3.0" name="Sci-Fi_SpaceShip" shadowVolume="200 50 200">
-	<environment name="Weather_Settings" template="sunny" skyboxtint="0.07 0.07 0.07" sunBrightness="10" sunGlare="2" exposure="1 2" ambience="indoor/factory2.ogg"/>
+	<environment name="Weather_Settings" template="sunny" skyboxtint="0.07 0.07 0.07" ambient="1" sunBrightness="10" sunGlare="2" exposure="1 2" ambience="indoor/factory2.ogg"/>
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
 	<voxbox name="Ground" pos="-42.4 0.0 -39.7" size="1000 1 1000" color="0.37 0.37 0.37"/>
@@ -3423,16 +3423,16 @@
 		<voxbox name="Hole" pos="-1.0 -1.3 -3.0" rot="0.0 90.0 90.0" size="3 13 20" brush="hole"/>
 		<vox pos="0.0 -1.2 -3.0" rot="0.0 90.0 90.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light">
 			<voxbox name="Light_Bulb" pos="0.0 1.1 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+				<light name="Light_Blue" pos="0.05 0.05 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="2"/>
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="0.0 0.9 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+				<light name="Light_Blue" pos="0.05 0.05 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="2"/>
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="0.0 0.3 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+				<light name="Light_Blue" pos="0.05 0.05 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="2"/>
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="0.0 0.5 -0.8" rot="0.0 0.0 -90.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 16" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.1 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="3"/>
+				<light name="Light_Blue" pos="0.05 0.05 0.8" rot="-90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.3" size="1.6 0.1" fogscale="2"/>
 			</voxbox>
 			<vox pos="0.1 0.1 -0.0" prop="true" file="MOD/assets/Sci_Fi_Wall_Decor.vox" object="Wall_Decor_light_Door">
 				<joint name="hinge" pos="0.1 0.0 -0.55" rot="-180.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
