@@ -3712,5 +3712,6 @@
 			<light name="Light_Red" tags="emergencyLight" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.0 0.0" scale="0.3" size="0.01 0.05" unshadowed="0.1" fogscale="10"/>
 		</voxbox>
 	</group>
+	<instance pos="23.6 0.75 40.1" rot="0.0 0.0 0.0" file="MOD/aienemy.xml"/>
 </scene>
 
