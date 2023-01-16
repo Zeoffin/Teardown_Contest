@@ -89,24 +89,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="0.2 3.1 -0.1" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.2 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Window_SideLights" pos="-1.1 1.5 2.3">
 				<voxbox name="Light_Bulb" pos="-0.1 0.0 0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
@@ -230,24 +212,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -690,38 +654,6 @@
 		</vox>
 		<vox pos="3.6 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
 		<vox pos="3.6 0.0 -0.0" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
-		<voxbox name="Light_Bulb" pos="5.3 2.9 2.25" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="-1.85 2.9 2.25" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
 		<trigger name="utilityTrigger" tags="airTrigger" pos="1.8 0.0 1.7" type="box" size="12.7 4.1 7"/>
 		<location name="utilityScanner" tags="airScanner" pos="1.9 1.8 1.7" rot="0.0 0.0 0.0"/>
 		<vox pos="4.85 0.4 0.15" rot="0.0 0.0 0.0" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Bunk_bed"/>
@@ -833,38 +765,6 @@
 		<vox pos="0.0 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
 		<vox pos="3.6 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
 		<vox pos="-0.0 0.0 0.0" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
-		<voxbox name="Light_Bulb" pos="-0.35 2.9 2.2" rot="0.0 145.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="3.45 2.9 -5.95" rot="0.0 -95.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
 		<trigger name="utilityTrigger" tags="airTrigger" pos="1.8 0.0 1.7" type="box" size="12.7 4.1 7"/>
 		<location name="utilityScanner" tags="airScanner" pos="1.9 1.8 1.7" rot="0.0 0.0 0.0"/>
 		<group name="OxygenTank_Compartment" pos="0.05 1.3 -1.1" rot="0.0 180.0 0.0">
@@ -1074,216 +974,6 @@
 				</voxbox>
 			</vox>
 		</vox>
-		<group name="Lights" pos="2.1 3.0 -0.2">
-			<voxbox name="Light_Bulb" pos="-0.1 -0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.6 -0.05 -2.9" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-4.2 -0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-3.7 -0.05 -2.9" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-7.2 -0.05 0.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.3 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-3.9 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-7.1 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-10.3 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-13.9 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-29.6 -0.05 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-29.6 -0.05 0.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-10.1 -0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-3.7 0.05 -11.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-				<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-13.7 -0.05 -2.9" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-10.6 -0.05 -3.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-14.2 -0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
-				<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-				<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-					<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-					<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-				</rope>
-			</voxbox>
-		</group>
 	</group>
 	<group name="Bath_Room" pos="15.2 0.1 22.0">
 		<vox pos="0.0 0.0 0.0" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Wall_flat_4_Door_Frame">
@@ -1630,24 +1320,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -1746,24 +1418,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -1876,24 +1530,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -1992,24 +1628,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -2222,24 +1840,7 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
+			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0"/>
 			<group name="Wall_Lights" pos="0.5 6.7 3.0">
 				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 					<light name="Light_Blue" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -2346,24 +1947,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Tube_Light" pos="1.05 4.4 -1.8" rot="0.0 0.0 0.0">
 				<voxbox name="Light_Bulb" pos="0.05 0.1 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 					<light name="Light_Blue" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.3" size="0 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2470,24 +2053,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Tube_Light" pos="1.05 4.4 -1.8" rot="0.0 0.0 0.0">
 				<voxbox name="Light_Bulb" pos="0.05 0.1 3.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 					<light name="Light_Blue" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.3" size="0 0.05" unshadowed="0.1" fogscale="5"/>
@@ -2602,24 +2167,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="2.8 3.1 -0.1" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.0 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<vox pos="-0.8 0.5 1.4" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Space_Lock_Compartment_Door">
 				<joint name="hinge" pos="0.35 0.0 -0.1" rot="0.0 -90.0 -90.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="true" limits="0 120"/>
 				<joint name="hinge" pos="-0.35 0.0 -0.1" rot="0.0 -90.0 -90.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="true" limits="0 120"/>
@@ -2802,21 +2349,21 @@
 					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
-			<vox pos="-2.65 1.85 -1.8" rot="0.0 180.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Small">
-				<voxbox name="Small_Door_Screen" pos="0.1 0.3 0.0" rot="0.0 -180.0 0.0" collide="true" size="2 2 1" color="0.11 0.11 0.11"/>
-				<voxbox name="Light_Bulb" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
+			<vox name="SpaceLock_Panel" pos="-2.7 2.0 -1.8" rot="0.0 180.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
+				<voxbox name="SpaceLock_Screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
+				<voxbox name="Light_Bulb" pos="0.4 0.4 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
 					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
-				<voxbox name="Light_Bulb" pos="0.0 0.1 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+				<voxbox name="Light_Bulb" pos="-0.2 0.4 -0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
 					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
-			<vox pos="-0.45 1.85 1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Small">
-				<voxbox name="Small_Door_Screen" pos="0.1 0.3 0.0" rot="0.0 -180.0 0.0" collide="true" size="2 2 1" color="0.11 0.11 0.11"/>
-				<voxbox name="Light_Bulb" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
+			<vox name="SpaceLock_Panel" pos="-0.3 2.0 1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
+				<voxbox name="SpaceLock_Screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
+				<voxbox name="Light_Bulb" pos="0.4 0.4 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
 					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
-				<voxbox name="Light_Bulb" pos="0.0 0.1 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
+				<voxbox name="Light_Bulb" pos="-0.2 0.4 -0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
 					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
@@ -2914,24 +2461,6 @@
 					</voxbox>
 				</group>
 			</vox>
-			<group name="Roof_Light" pos="0.2 3.1 -0.1" rot="0.0 0.0 0.0">
-				<voxbox name="Light_Bulb" pos="0.2 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-					<light name="Light_Orange_Bright" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
-					<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-					<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-					<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
-						<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
-						<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
-					</rope>
-				</voxbox>
-			</group>
 			<group name="Window_SideLights" pos="-1.1 1.5 2.3">
 				<voxbox name="Light_Bulb" pos="-0.1 0.0 0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
@@ -3368,14 +2897,6 @@
 			<location pos="1.7 0.8 1.0" rot="0.0 0.0 0.0"/>
 			<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
 		</rope>
-		<voxbox name="Light_Bulb" pos="-0.2 3.4 2.9" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange_Bright" pos="0.35 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-		</voxbox>
 		<vox name="Cooler" pos="-3.8 2.5 1.15" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Heater">
 			<voxbox name="Light_Bulb" pos="-0.3 0.7 -0.1" rot="0.0 90.0 -90.0" density="1.5" strength="0.1" collide="true" size="5 1 2" material="glass" color="0.24 0.65 1.0" pbr="0 1 0 15">
 				<light name="Light_Red" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="0.24 0.65 1.0" scale="0.3" size="0.1 0.2" fogscale="20"/>
@@ -3425,7 +2946,7 @@
 			</vox>
 		</vox>
 	</group>
-	<group name="Emergency_Light" pos="6.45 0.4 13.7" rot="0.0 0.0 0.0">
+	<group name="Emergency_Lights" pos="6.45 0.4 13.7" rot="0.0 0.0 0.0">
 		<voxbox name="EmLight" pos="-3.1 3.1 2.95" rot="0.0 90.0 0.0" density="2" strength="50" collide="true" prop="true" size="1 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0">
 			<joint name="Spinner" tags="emergencySpinner" pos="0.05004 0.20011 0.05" rot="-90.0 -90.0 0.0" type="hinge" collide="true"/>
 			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 -0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
@@ -3793,5 +3314,463 @@
 		</voxbox>
 	</group>
 	<instance pos="23.6 0.75 40.1" rot="0.0 0.0 0.0" file="MOD/aienemy.xml"/>
+	<group name="Roof_Lights" pos="11.6 3.2 -15.9" rot="0.0 0.0 0.0">
+		<voxbox name="Light_Bulb" pos="0.2 -0.05 0.4" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.4 -0.05 -0.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.4 -0.05 9.0" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.2 -0.05 9.7" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.4 -0.05 18.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.8 -0.15 30.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.3 -0.15 27.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-0.3 -0.15 30.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.2 -0.15 27.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-3.3 -0.15 31.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="3.6 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.0 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-3.2 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.4 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-10.0 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-25.7 -0.15 34.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-25.7 -0.15 31.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.2 -0.15 30.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="0.2 -0.05 19.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-18.9 -0.05 34.1" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-19.6 -0.05 30.9" rot="0.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-25.9 0.3 40.8" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-9.8 -0.05 9.7" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.6 -0.05 9.0" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.6 -0.05 18.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-9.8 -0.05 19.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-10.3 -0.15 30.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-9.8 -0.15 27.6" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.7 -0.15 27.5" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.1" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.05 0.15 -0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="13.95 -0.2 24.9" rot="0.0 -35.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="10.15 -0.2 33.05" rot="0.0 85.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-4.7 -0.2 40.15" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-11.85 -0.2 40.15" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="7 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange_Bright" tags="roofLight" pos="0.35 0.05 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" reach="5" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.7 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 3" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="7 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope name="Cable" pos="0.1 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
+				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
+				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+	</group>
 </scene>
 
