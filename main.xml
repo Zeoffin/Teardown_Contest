@@ -1474,6 +1474,29 @@
 			</vox>
 			<vox pos="0.0 0.7 -0.1" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="bar_chair"/>
 		</group>
+		<vox name="Heater" pos="2.9 2.5 2.85" rot="0.0 -180.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Heater">
+			<voxbox name="Light_Bulb" pos="-0.1 0.7 0.1" rot="0.0 180.0 -90.0" density="1.5" strength="0.1" collide="true" size="5 1 2" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+				<light name="Light_Orange" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.3" size="0.1 0.2" fogscale="20"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.1 0.7 -0.1" rot="0.0 180.0 -90.0" density="1.5" strength="0.1" collide="true" size="5 1 3" material="glass" color="1.0 0.24 0.24" pbr="0 1 0 15">
+				<light name="Light_Red" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="1.0 0.24 0.24" scale="0.3" size="0.1 0.2" fogscale="20"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" pos="-0.1 0.7 0.3" rot="0.0 180.0 -90.0" density="1.5" strength="0.1" collide="true" size="5 1 2" material="glass" color="1.0 0.24 0.24" pbr="0 1 0 15">
+				<light name="Light_Red" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="1.0 0.24 0.24" scale="0.3" size="0.1 0.2" fogscale="20"/>
+			</voxbox>
+		</vox>
+		<vox pos="2.55 1.2 6.25" rot="0.0 -160.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Radio"/>
+		<vox pos="-0.6 1.5 9.6" rot="0.0 20.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Plate"/>
+		<vox pos="-0.6 1.5 9.0" rot="0.0 0.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cup"/>
+		<vox pos="0.05 1.5 0.9" rot="0.0 -70.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cup_1"/>
+		<vox pos="-1.9 1.5 0.9" rot="0.0 -130.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cup_2"/>
+		<vox pos="-1.3 1.5 9.0" rot="0.0 20.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Bowl"/>
+		<vox pos="-2.5 1.5 -0.7" rot="0.0 20.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Plate"/>
+		<vox name="MRE" pos="-2.5 1.5 -1.4" rot="0.0 20.0 0.0" desc="MRE - Vegetable" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="MRE"/>
+		<vox name="MRE" pos="-2.5 1.5 -1.9" rot="0.0 0.0 0.0" desc="MRE - Meat" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="MRE_1"/>
+		<vox name="MRE" pos="-0.9 1.5 0.75" rot="0.0 -60.0 0.0" desc="MRE - Fruit" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="MRE_2"/>
+		<vox pos="-2.15 1.5 -4.25" rot="0.0 20.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Plate"/>
+		<vox pos="-2.15 1.6 -4.3" rot="0.0 -10.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Bowl"/>
 	</group>
 	<group name="Corridor_Basic_Basic_Vent" pos="13.4 0.1 2.8">
 		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
