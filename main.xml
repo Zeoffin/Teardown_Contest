@@ -270,7 +270,7 @@
 			</vox>
 		</vox>
 	</group>
-	<group name="2nd_Small_Room" pos="-14.1 4.2 -4.7" rot="0.0 -180.0 0.0">
+	<group name="Control_Room" pos="-14.1 4.2 -4.7" rot="0.0 -180.0 0.0">
 		<vox pos="0.0 -0.0 -1.7" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Wall_flat_4_Door_Frame">
 			<voxbox name="Light_Bulb" pos="-0.2 3.0 1.3" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="4 1 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
 				<light name="Light_Orange" pos="0.2 0.05 0.1" rot="0.0 0.0 0.0" type="area" color="1.0 0.74 0.42" scale="1" size="0.4 0.1" reach="3" unshadowed="0.1" fogscale="10"/>
@@ -283,87 +283,71 @@
 			</vox>
 		</vox>
 		<vox pos="0.0 -0.0 1.90001" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
-		<vox pos="-3.2 0.0 1.9" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_Window_Medium">
-			<voxbox name="Light_Bulb" pos="-0.8 1.5 1.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.1 0.55 0.1" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.9 0.1" unshadowed="0.1" fogscale="5"/>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.8 3.0 -1.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" size="18 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.9 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.8" reach="5" fogscale="3"/>
-			</voxbox>
-		</vox>
-		<vox pos="3.2 0.0 -1.7" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_Window_Medium">
-			<voxbox name="Light_Bulb" pos="-0.8 1.5 1.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.1 0.55 0.1" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.9 0.1" unshadowed="0.1" fogscale="5"/>
-			</voxbox>
-			<voxbox name="Light_Bulb" pos="-0.8 3.0 -1.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" size="18 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-				<light name="Light_Orange_Bright" pos="0.9 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.8" reach="5" fogscale="3"/>
-			</voxbox>
-		</vox>
-		<vox pos="3.2 0.0 1.9" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_Inv">
+		<vox pos="-19.7 0.0 -1.7" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_Inv">
 			<voxbox name="Light_Bulb" pos="-0.8 1.5 -1.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.1 0.55 0.1" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.9 0.1" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</vox>
-		<vox pos="-3.2 0.0 -1.7" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1_Inv">
-			<voxbox name="Light_Bulb" pos="-0.8 1.5 -1.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+		<vox pos="-19.7 0.0 1.9" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1">
+			<voxbox name="Light_Bulb" pos="-0.8 1.5 1.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.1 0.55 0.1" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.9 0.1" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</vox>
-		<group name="Office_Chair" pos="2.4 0.4 2.1" rot="0.0 20.0 0.0">
+		<group name="Locker" pos="-19.9 0.4 1.7" rot="0.0 -180.0 0.0">
+			<vox name="Locker" pos="0.1 0.0 -0.0" rot="0.0 180.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
+			<vox name="Locker_Door" pos="-0.2 0.3 -0.5" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
+				<joint name="hinge" pos="0.1 0.1 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.1 0.5 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+			<vox name="Locker_Door" pos="-0.2 1.0 -0.7" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_1">
+				<joint name="hinge" pos="0.1 0.1 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.1 1.2 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+			<vox name="Locker_Door" pos="-0.3 1.0 -0.2" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_1">
+				<joint name="hinge" pos="0.0 1.2 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.0 0.1 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+			<vox name="Locker_Door" pos="-0.3 0.3 0.6" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
+				<joint name="hinge" pos="0.0 0.5 0.4" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.0 0.1 0.4" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+			<vox name="Locker_Door" pos="-0.2 1.0 0.3" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_2">
+				<joint name="hinge" pos="0.1 0.1 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.1 1.2 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+			<vox name="Locker_Door" pos="-0.3 1.0 0.8" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_2">
+				<joint name="hinge" pos="0.0 1.2 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+				<joint name="hinge" pos="0.0 0.1 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
+			</vox>
+		</group>
+		<group name="Office_Chair" pos="-16.0 0.4 -1.35" rot="0.0 110.0 0.0">
 			<vox pos="0.0 0.0 -0.0" rot="0.0 0.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_chair_Legs">
 				<joint pos="-0.0 0.4 0.0" rot="-90.0 0.0 0.0" type="hinge" collide="true"/>
 			</vox>
 			<vox pos="0.0 0.4 0.0" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_chair_Seat"/>
 		</group>
-		<group name="Locker" pos="0.4 0.4 1.5" rot="0.0 180.0 0.0">
-			<vox name="Locker" pos="3.9 0.0 2.9" rot="0.0 180.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
-			<vox name="Locker_Door" pos="3.6 0.3 2.4" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
-				<joint name="hinge" pos="0.1 0.1 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.1 0.5 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-			<vox name="Locker_Door" pos="3.6 1.0 2.2" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_1">
-				<joint name="hinge" pos="0.1 0.1 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.1 1.2 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-			<vox name="Locker_Door" pos="3.5 1.0 2.7" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_1">
-				<joint name="hinge" pos="0.0 1.2 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.0 0.1 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-			<vox name="Locker_Door" pos="3.5 0.3 3.5" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
-				<joint name="hinge" pos="0.0 0.5 0.4" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.0 0.1 0.4" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-			<vox name="Locker_Door" pos="3.6 1.0 3.2" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_2">
-				<joint name="hinge" pos="0.1 0.1 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.1 1.2 0.2" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-			<vox name="Locker_Door" pos="3.5 1.0 3.7" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door_2">
-				<joint name="hinge" pos="0.0 1.2 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-				<joint name="hinge" pos="0.0 0.1 0.2" rot="-90.0 90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
-			</vox>
-		</group>
-		<group name="Office_Desk" pos="2.3 0.4 0.4" rot="0.0 -90.0 0.0">
+		<group name="Office_Desk" pos="-17.7 0.4 -1.25" rot="0.0 0.0 0.0">
 			<vox pos="1.1 0.0 -1.15" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_desk"/>
 			<vox pos="0.4 0.1 -0.85" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_desk_Door">
 				<joint name="hinge" pos="0.0 0.45 0.35" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 				<joint name="hinge" pos="0.0 0.15 0.35" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
 		</group>
-		<compound name="desk_Lamp" pos="3.5 1.5 1.0" density="1" strength="5" prop="true">
+		<compound name="desk_Lamp" pos="-17.1 1.5 -2.45" rot="0.0 90.0 0.0" density="1" strength="5" prop="true">
 			<vox pos="-0.05 0.0 -0.1" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Desk_Lamp">
 				<voxbox name="Light_Bulb" pos="0.2 0.6 -0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" prop="true" size="1 1 3" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
 					<light name="Light_Orange_Dim" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0.2 0.05" unshadowed="0.1" fogscale="5"/>
 				</voxbox>
 			</vox>
 		</compound>
-		<vox pos="3.6 1.2 0.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Red"/>
-		<vox pos="3.55 1.5 1.95" rot="0.0 -180.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Computer_Screen">
+		<vox pos="-17.6 1.2 -2.55" rot="0.0 0.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Red"/>
+		<vox pos="-16.15 1.5 -2.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Computer_Screen">
 			<voxbox name="Computer_Screen" pos="0.1 0.3 0.2" rot="0.0 90.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
 		</vox>
-		<vox pos="3.4 1.2 0.95" rot="90.0 -70.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Yellow"/>
-		<vox pos="3.25 1.2 0.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Blue"/>
-		<vox pos="-3.4 0.4 0.15" rot="0.0 115.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Suitcase"/>
-		<vox name="Heater" pos="2.9 2.5 -2.8" rot="0.0 -90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Heater">
+		<vox pos="-17.15001 1.2 -2.35" rot="90.0 20.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Yellow"/>
+		<vox pos="-17.60001 1.2 -2.2" rot="0.0 0.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Blue"/>
+		<vox pos="-12.0 0.4 -2.3" rot="0.0 175.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Suitcase"/>
+		<vox name="Heater" pos="-12.65 2.5 3.0" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Heater">
 			<voxbox name="Light_Bulb" pos="-0.1 0.7 0.1" rot="0.0 180.0 -90.0" density="1.5" strength="0.1" collide="true" size="5 1 2" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 				<light name="Light_Orange" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.3" size="0.1 0.2" fogscale="20"/>
 			</voxbox>
@@ -374,11 +358,100 @@
 				<light name="Light_Red" pos="0.3 0.0 0.15" rot="90.0 -90.0 0.0" type="area" color="1.0 0.24 0.24" scale="0.3" size="0.1 0.2" fogscale="20"/>
 			</voxbox>
 		</vox>
-		<vox pos="0.1 0.4 2.6" rot="0.0 -180.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Technology.vox" object="Terminal">
+		<vox pos="-11.25 0.4 0.35" rot="0.0 -180.0 0.0" density="1" strength="40" collide="true" file="MOD/assets/Sci_Fi_Technology.vox" object="Terminal">
 			<voxbox name="Light_Bulb" pos="-0.4 1.9 -0.1" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.01 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 		</vox>
+		<group name="Office_Chair" pos="-12.85 0.4 -1.35" rot="0.0 110.0 0.0">
+			<vox pos="0.0 0.0 -0.0" rot="0.0 0.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_chair_Legs">
+				<joint pos="-0.0 0.4 0.0" rot="-90.0 0.0 0.0" type="hinge" collide="true"/>
+			</vox>
+			<vox pos="0.0 0.4 0.0" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_chair_Seat"/>
+		</group>
+		<group name="Office_Desk" pos="-14.55 0.4 -1.25" rot="0.0 0.0 0.0">
+			<vox pos="1.1 0.0 -1.15" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_desk"/>
+			<vox pos="0.4 0.1 -0.85" rot="0.0 -90.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Office_desk_Door">
+				<joint name="hinge" pos="0.0 0.45 0.35" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+				<joint name="hinge" pos="0.0 0.15 0.35" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
+			</vox>
+		</group>
+		<compound name="desk_Lamp" pos="-13.95 1.5 -2.45" rot="0.0 90.0 0.0" density="1" strength="5" prop="true">
+			<vox pos="-0.05 0.0 -0.1" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Desk_Lamp">
+				<voxbox name="Light_Bulb" pos="0.2 0.6 -0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" prop="true" size="1 1 3" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+					<light name="Light_Orange_Dim" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.74 0.42" scale="0.2" size="0.2 0.05" unshadowed="0.1" fogscale="5"/>
+				</voxbox>
+			</vox>
+		</compound>
+		<vox pos="-13.0 1.5 -2.5" rot="0.0 -90.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Computer_Screen">
+			<voxbox name="Computer_Screen" pos="0.1 0.3 0.2" rot="0.0 90.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
+		</vox>
+		<vox pos="-6.4 0.0 1.9" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Windows.vox" object="Corridor_Basic_flat_1">
+			<group name="Roof_Light" pos="1.8 7.2 -1.8" rot="0.0 0.0 0.0"/>
+			<group name="Wall_Lights" pos="-1.1 2.6 4.7">
+				<voxbox name="Light_Orange" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+					<light name="Light_Orange" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="1.0 0.74 0.42" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
+				</voxbox>
+				<voxbox name="Light_Orange" pos="-0.1 0.1 -7.5" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 10 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+					<light name="Light_Orange" pos="0.05 0.5 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="1.0 0.74 0.42" scale="0.3" size="0.9 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
+				</voxbox>
+				<voxbox name="Light_Orange" pos="-0.1 0.1 -5.1" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 7 1" material="glass" color="1.0 0.74 0.42" pbr="0 0 0 32">
+					<light name="Light_Orange" pos="0.05 0.35 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="1.0 0.74 0.42" scale="0.3" size="0.6 0.05" reach="3" unshadowed="0.1" fogscale="10"/>
+				</voxbox>
+			</group>
+			<group name="Table_Lights" pos="-1.3 0.7 -0.1">
+				<voxbox name="Light_Blue" pos="-0.1 0.1 -3.0" rot="90.0 .0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 61 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+					<light name="Light_Blue" pos="0.05 3.05 0.05" rot="-90.0 -90.0 0.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="6 0.05" reach="3" unshadowed="0.1" fogscale="5"/>
+				</voxbox>
+			</group>
+		</vox>
+		<vox pos="-6.50001 0.0 -1.9" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Windows.vox" object="Corridor_Basic_Flat">
+			<group name="Window_SideLights" pos="-1.1 1.5 2.3">
+				<voxbox name="Light_Bulb" pos="-0.1 0.0 0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.3 0.0 -0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.2 0.0 -4.7" rot="0.0 -90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="0.0 0.0 -4.7" rot="0.0 -90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+			</group>
+			<group name="Window_CabinetLights" pos="-1.1 0.7 3.1">
+				<voxbox name="Light_Bulb" pos="-0.1 0.0 0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="2 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Dim" pos="0.1 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.2" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="0.0 0.0 -6.3" rot="0.0 270.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="2 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Dim" pos="0.1 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.2" size="0.1 0.2" reach="5" fogscale="3"/>
+				</voxbox>
+			</group>
+			<group name="Window_Lights" pos="-1.4 0.4 -1.9">
+				<voxbox name="Light_Bulb" pos="0.0 -0.0 -0.0" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.0 0.0 1.8" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.0 0.0 3.6" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+			</group>
+			<vox pos="-0.9 0.6 2.7" rot="0.0 0.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Corridor_Windows.vox" object="Window_Cabinet_Door">
+				<joint name="hinge" pos="0.1 0.35 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 100"/>
+				<joint name="hinge" pos="0.1 0.05 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 100"/>
+			</vox>
+			<vox pos="-0.8 0.6 -2.8" rot="0.0 -180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Corridor_Windows.vox" object="Window_Cabinet_Door">
+				<joint name="hinge" pos="-0.0 0.35 0.4" rot="-90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 100"/>
+				<joint name="hinge" pos="-0.0 0.05 0.4" rot="-90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 100"/>
+			</vox>
+		</vox>
+		<vox pos="-16.5 0.0 -1.7" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_2"/>
+		<vox pos="-16.5 0.0 1.90001" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_3"/>
+		<vox pos="-12.9 0.0 1.9" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_2"/>
+		<vox pos="-12.9 0.0 -1.7" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_3"/>
 	</group>
 	<group name="Stairs_UP" pos="-14.1 0.09999 5.90001" rot="0.0 -180.0 0.0">
 		<vox pos="0.0 4.1 5.3" rot="0.0 0.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Stairs.vox" object="Corridor_Wall_flat_4_Door_Frame_Stairs">
@@ -898,7 +971,6 @@
 			</voxbox>
 		</vox>
 		<vox pos="6.8 0.4 3.3" rot="0.0 100.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel"/>
-		<vox pos="5.5 0.4 -7.7" rot="0.0 50.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
 		<vox name="Chair" pos="-2.95 0.4 0.45" rot="0.0 -165.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Chair"/>
 		<compound name="Desk_Lamp" pos="-3.35 1.5 -0.2" rot="0.0 120.0 0.0" density="1" strength="1" prop="true">
 			<vox pos="0.15 0.0 0.0" rot="0.0 180.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Candle"/>
@@ -1187,9 +1259,8 @@
 		<vox tags="explosive=0.2" pos="-2.6 0.7 2.2" rot="0.0 10.0 0.0" desc="Oxygen -L" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
 		<vox tags="explosive=0.4" pos="0.3 0.4 -0.25" rot="0.0 125.0 0.0" desc="Oxygen -M" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Medium"/>
 		<trigger name="utilityTrigger" tags="airTrigger" pos="-1.1 0.0 -0.4" type="box" size="7.8 4.1 7"/>
+		<vox pos="-3.7 0.4 2.0" rot="0.0 -130.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Barrel_1"/>
 	</group>
-	<group name="Corridor_Doorframe" pos="13.4 0.1 -23.3" rot="0.0 180.0 0.0"/>
-	<group name="Corridor_Basic_Basic_Vent" pos="3.4 0.1 2.8"/>
 	<group name="Corridor_Kitchen" pos="3.4 0.1 -6.5">
 		<vox pos="-1.8 0.0 -4.0" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Walls_Close.vox" object="Corridor_Wall_Close_1">
 			<voxbox name="Light_Bulb" pos="-0.8 1.5 1.3" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 11 2" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
@@ -1359,46 +1430,6 @@
 				<joint name="hinge" pos="0.2 0.6 -0.1" rot="90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 110"/>
 			</vox>
 		</vox>
-		<voxbox name="Light_Bulb" pos="1.1 2.95 0.55" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
-				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
-				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="2.15 2.95 0.55" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
-				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
-				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="0.15 2.95 0.55" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
-				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
-				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="-0.85 2.95 0.55" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
-				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
-				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
-		<voxbox name="Light_Bulb" pos="-1.95 2.95 0.55" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
-			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
-			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
-			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
-				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
-				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
-			</rope>
-		</voxbox>
 		<vox pos="0.6 0.4 -4.3" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Trashcan"/>
 		<group name="Eating_Row" pos="-0.95 0.4 9.25">
 			<vox pos="0.65 0.0 0.7" rot="0.0 130.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Chair"/>
@@ -2320,6 +2351,33 @@
 				</voxbox>
 			</group>
 		</vox>
+		<vox pos="-31.2 4.1 11.0" rot="0.0 90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Windows.vox" object="Corridor_End_Window">
+			<group name="Window_Lights" pos="1.8 0.4 -1.5" rot="0.0 -90.0 0.0">
+				<voxbox name="Light_Bulb" pos="0.0 -0.0 -0.0" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.0 0.0 1.8" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.0 0.0 3.6" rot="0.0 360.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="0.42 0.75 1.0" pbr="0 1 0 15">
+					<light name="Light_Blue_Dim" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="0.42 0.75 1.0" scale="0.5" size="0.1 0.1" reach="5" fogscale="3"/>
+				</voxbox>
+			</group>
+			<group name="Window_SideLights" pos="-2.4 1.5 -1.2" rot="0.0 -90.0 0.0">
+				<voxbox name="Light_Bulb" pos="-0.1 0.0 0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.3 0.0 -0.0" rot="0.0 90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="-0.2 0.0 -4.7" rot="0.0 -90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+				<voxbox name="Light_Bulb" pos="0.0 0.0 -4.7" rot="0.0 -90.0 90.0" density="1.5" strength="0.1" collide="true" prop="true" size="11 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+					<light name="Light_Orange_Bright" pos="0.55 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.1" reach="5" fogscale="3"/>
+				</voxbox>
+			</group>
+		</vox>
 	</group>
 	<group name="Corridor_Doorway_Doorframe" pos="13.4 0.1 10.20001">
 		<vox pos="-1.8 0.0 1.4" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Corridor_Doorway_Cables"/>
@@ -2497,9 +2555,7 @@
 			</voxbox>
 		</vox>
 	</group>
-	<group name="PowerCell_Rack" pos="5.25 0.5 26.1" rot="0.0 -170.0 0.0"/>
 	<vox name="OxigenTank_Big" tags="explosive=0.5" pos="0.6 0.8 19.15" rot="0.0 140.0 -90.0" desc="Oxygen -L" density="5" strength="1" prop="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Big"/>
-	<group name="OxygenTank_Rack" pos="5.2 0.5 21.45" rot="0.0 170.0 0.0"/>
 	<group name="OxygenTank_Compartment" pos="-2.2 1.4 25.1" rot="0.0 -90.0 0.0">
 		<vox name="OxigenTank_Shelf" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="6" strength="50" collide="true" file="MOD/assets/Sci_Fi_OxigenTank.vox" object="OxigenTank_Shelf">
 			<voxbox name="Light_Bulb" pos="0.55 1.4 -0.1" rot="90.0 0.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="2 1 1" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
@@ -2932,7 +2988,31 @@
 				<light name="Light_Red" tags="emergencyLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.09 0.09" scale="0.9" size="0.1 0.1" reach="14" fogscale="5" glare="0.2"/>
 			</voxbox>
 		</voxbox>
-		<voxbox name="EmLight" pos="-18.8 7.2 -18.45" rot="0.0 90.0 0.0" density="2" strength="50" collide="true" prop="true" size="1 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0">
+		<voxbox name="EmLight" pos="-20.45 7.2 -18.45" rot="0.0 90.0 0.0" density="2" strength="50" collide="true" prop="true" size="1 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0">
+			<joint name="Spinner" tags="emergencySpinner" pos="0.05004 0.20011 0.05" rot="-90.0 -90.0 0.0" type="hinge" collide="true"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 -0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="-0.05 -0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Light_Bulb" tags="emergencyLight" pos="0.2 0.08 0.1" rot="0.0 -180.0 -60.0" density="1.5" strength="0.1" collide="true" size="1 1 0" material="glass" color="1.0 0.09 0.09" pbr="0 1 0 15">
+				<light name="Light_Red" tags="emergencyLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.09 0.09" scale="0.9" size="0.1 0.1" reach="14" fogscale="5" glare="0.2"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 0.08 0.0" rot="0.0 0.0 -60.0" density="1.5" strength="0.1" collide="true" size="1 1 0" material="glass" color="1.0 0.09 0.09" pbr="0 1 0 15">
+				<light name="Light_Red" tags="emergencyLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.09 0.09" scale="0.9" size="0.1 0.1" reach="14" fogscale="5" glare="0.2"/>
+			</voxbox>
+		</voxbox>
+		<voxbox name="EmLight" pos="-14.1 7.2 -18.45" rot="0.0 90.0 0.0" density="2" strength="50" collide="true" prop="true" size="1 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0">
+			<joint name="Spinner" tags="emergencySpinner" pos="0.05004 0.20011 0.05" rot="-90.0 -90.0 0.0" type="hinge" collide="true"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 -0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="-0.05 -0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<voxbox name="Light_Bulb" tags="emergencyLight" pos="0.2 0.08 0.1" rot="0.0 -180.0 -60.0" density="1.5" strength="0.1" collide="true" size="1 1 0" material="glass" color="1.0 0.09 0.09" pbr="0 1 0 15">
+				<light name="Light_Red" tags="emergencyLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.09 0.09" scale="0.9" size="0.1 0.1" reach="14" fogscale="5" glare="0.2"/>
+			</voxbox>
+			<voxbox name="Light_Bulb" tags="emergencyLight" pos="-0.1 0.08 0.0" rot="0.0 0.0 -60.0" density="1.5" strength="0.1" collide="true" size="1 1 0" material="glass" color="1.0 0.09 0.09" pbr="0 1 0 15">
+				<light name="Light_Red" tags="emergencyLight" pos="0.05 0.0 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.09 0.09" scale="0.9" size="0.1 0.1" reach="14" fogscale="5" glare="0.2"/>
+			</voxbox>
+		</voxbox>
+		<voxbox name="EmLight" pos="-3.85 7.2 -18.45" rot="0.0 90.0 0.0" density="2" strength="50" collide="true" prop="true" size="1 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0">
 			<joint name="Spinner" tags="emergencySpinner" pos="0.05004 0.20011 0.05" rot="-90.0 -90.0 0.0" type="hinge" collide="true"/>
 			<voxbox name="Lamp_Cover" pos="-0.1 -0.1 -0.1" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="3 2 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
 			<voxbox name="Lamp_Cover" pos="-0.05 -0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="50" collide="true" size="2 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
@@ -3694,6 +3774,46 @@
 			<rope name="Cable" pos="0.6 0.15 0.0" size="0.1" slack="0.05" strength="1" maxstretch="1.5">
 				<location name="Light_Cable" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0"/>
 				<location name="Light_Cable" pos="0.0 0.55 0.05" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-7.1 -0.15 9.95" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange" tags="roofLight" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-6.05 -0.15 9.95" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange" tags="roofLight" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-8.05 -0.15 9.95" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange" tags="roofLight" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-9.05 -0.15 9.95" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange" tags="roofLight" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</voxbox>
+		<voxbox name="Light_Bulb" pos="-10.15 -0.15 9.95" rot="0.0 180.0 0.0" density="1.5" strength="0.1" collide="true" prop="true" size="1 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
+			<light name="Light_Orange" pos="0.05 0.05 0.05" rot="90.0 -90.0 0.0" type="cone" color="1.0 0.74 0.42" scale="0.8" size="0.1 0.7" fogscale="3"/>
+			<voxbox name="Lamp_Cover" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" density="2" strength="1" collide="true" size="1 1 0" material="metal" color="0.38 0.37 0.37" pbr="1 1 0 0"/>
+			<rope pos="0.05 0.2 0.05" strength="1" maxstretch="1.5">
+				<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location pos="0.0 0.45 0.0" rot="0.0 0.0 0.0"/>
 			</rope>
 		</voxbox>
 	</group>
