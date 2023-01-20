@@ -20,11 +20,16 @@ function init()
 	scanners = FindLocations("airScanner", true)	            	-- Locations of the scanners (global)
 	roomTriggers = FindTriggers('airTrigger', true)					-- All triggers (global)
 
+	roofLights = FindLights('roofLight', true)						-- Get all roof lights (global)
+	roofLightsShapes = FindLights('roofLight', true)				-- Get all roof light shapes (global)
+
 	accentLights = FindLights('accentLight', true)					-- Get all accent lights (global)
 	accentLightsShapes = FindLights('accentLight', true)			-- Get all accent light shapes (global)
 
 	emergencyLights = FindLights('emergencyLight', true)			-- Get all emergency lights (global)
 	emergencyLightsShapes = FindShapes('emergencyLight', true)		-- Get all shapes of emergency lights (global)
+
+	emergencySpinners = FindJoints('emergencySpinner', true)
 
 	pressure = true                                 				-- Pressure
 	activeHolesList = {}                              				-- List of all holes
@@ -112,7 +117,7 @@ function findHoles()
 
 					-- Check for a hole here
 					if not hit then
-						DebugPrint("FOUND HOLE")
+						--DebugPrint("FOUND HOLE")
 						emergencyStatus = true
 						activeHolesList[i] = rayPosition
 						activeDirList[i] = rotatedVector
@@ -272,15 +277,9 @@ function setEmergencyLights(emergency, dt)
 
 	if emergency then
 
-		-- Turn off accent lights
-		for index, light in pairs(accentLights) do
-			SetLightEnabled(light, false)
-		end
-
-		-- Turn off emission from accent light shapes
-		for index, lightShape in pairs(accentLightsShapes) do
-			SetShapeEmissiveScale(lightShape, 0)
-		end
+		-- Turn off rest of lights
+		turnOffLights(accentLights, accentLightsShapes)
+		turnOffLights(roofLights, roofLightsShapes)
 
 		-- Change light color to red in emergency
 		for index, light in pairs(emergencyLights) do
@@ -293,6 +292,8 @@ function setEmergencyLights(emergency, dt)
 			SetShapeEmissiveScale(lightShape, scale)
 		end
 
+		setSpinnerMotion()
+
 	else
 
 		--- TODO: Setup lights correctly when disabling the emergency system
@@ -302,6 +303,26 @@ function setEmergencyLights(emergency, dt)
 
 	end
 
+end
+
+function turnOffLights(lights, lightShapes)
+
+	-- Turn off accent lights
+	for index, light in pairs(lights) do
+		SetLightEnabled(light, false)
+	end
+
+	-- Turn off emission from accent light shapes
+	for index, lightShape in pairs(lightShapes) do
+		SetShapeEmissiveScale(lightShape, 0)
+	end
+
+end
+
+function setSpinnerMotion()
+	for index, spinner in pairs(emergencySpinners) do
+		SetJointMotor(spinner, 4, 1)
+	end
 end
 
 function extinguishFire(min, max)
