@@ -2272,16 +2272,7 @@
 					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
-			<vox name="SpaceLock_Panel" pos="-2.7 2.0 -1.8" rot="0.0 180.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
-				<voxbox name="SpaceLock_Screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
-				<voxbox name="Light_Bulb" pos="0.4 0.4 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
-					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
-				</voxbox>
-				<voxbox name="Light_Bulb" pos="-0.2 0.4 -0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
-					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
-				</voxbox>
-			</vox>
-			<vox name="SpaceLock_Panel" pos="-0.3 2.0 1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
+			<vox name="SpaceLock_Panel" pos="-1.55 2.0 1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
 				<voxbox name="SpaceLock_Screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
 				<voxbox name="Light_Bulb" pos="0.4 0.4 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
 					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
@@ -2496,11 +2487,14 @@
 			<voxbox name="Light_Bulb" pos="5.5 0.1 -4.4" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
+			<voxbox name="Light_Bulb" pos="5.5 0.1 -4.4" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+			</voxbox>
 			<voxbox name="Light_Bulb" pos="2.5 0.1 -4.4" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="-0.6 0.1 -4.4" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
+				<light name="Light_Blue" pos="0.05 0.05 0.15" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
 			</voxbox>
 			<voxbox name="Light_Bulb" pos="-3.7 0.1 -4.4" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 9" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
 				<light name="Light_Blue" pos="0.05 0.05 0.45" rot="0.0 -360.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="0.2" size="0.8 0.05" unshadowed="0.1" fogscale="5"/>
@@ -4327,5 +4321,16 @@
 			</group>
 		</script>
 	</group>
+	<vox name="Flare-Item" pos="23.8 0.4 -8.0" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="Flare"/>
+	<vox name="CellStick-Item" pos="26.25 0.4 -8.0" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="CellStick">
+		<voxbox name="Light_Bulb" pos="0.1 2.3 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 28" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="lightsource" pos="0.05 0.05 1.4" rot="0.0 0.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="15" size="2.7 0.05" unshadowed="0.1" fogscale="1"/>
+		</voxbox>
+	</vox>
+	<vox name="Glowstick-Item" pos="25.1 0.4 -8.1" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="Glowstick">
+		<voxbox name="Light_Bulb" pos="0.2 0.3 0.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 3 11" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
+			<light name="lightsource" pos="0.15 0.15 0.55" rot="0.0 0.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="30" size="0.8 0.15" unshadowed="0.1" fogscale="1" glare="0.3"/>
+		</voxbox>
+	</vox>
 </scene>
 
