@@ -179,6 +179,10 @@ function configInit()
 	if HasTag(body, "stepsound") then
 		config.stepSound = GetTagValue(body, "stepsound")
 	end
+	DebugPrint("CONFIG INIT")
+	DebugPrint(string.format("EYE: %d", eye))
+	DebugPrint(string.format("HEAD: %d", head))
+	DebugPrint(string.format("HAS VISION: %d", tostring(config.hasVision)))
 end
 
 ------------------------------------------------------------------------
