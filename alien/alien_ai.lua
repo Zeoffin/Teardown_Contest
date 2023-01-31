@@ -137,7 +137,6 @@ config.maxSoundDist = 100.0
 config.aggressive = false
 config.stepSound = "m"
 config.practice = false
-config.maxHealth = 400.0
 
 PATH_NODE_TOLERANCE = 0.8
 
@@ -179,10 +178,6 @@ function configInit()
 	if HasTag(body, "stepsound") then
 		config.stepSound = GetTagValue(body, "stepsound")
 	end
-	DebugPrint("CONFIG INIT")
-	DebugPrint(string.format("EYE: %d", eye))
-	DebugPrint(string.format("HEAD: %d", head))
-	DebugPrint(string.format("HAS VISION: %d", tostring(config.hasVision)))
 end
 
 ------------------------------------------------------------------------
@@ -254,9 +249,7 @@ function robotInit()
 	robot.limitTrigger = FindTrigger("limit")
 	robot.investigateTrigger = FindTrigger("investigate")
 	robot.activateTrigger = FindTrigger("activate")
-	robot.health = config.maxHealth
 	if robot.activateTrigger ~= 0 then
-		DebugPrint("Inactive")
 		SetTag(robot.body, "inactive")
 	end
 	for i=1, #robot.allBodies do
@@ -286,14 +279,23 @@ function robotUpdate(dt)
 	robotSetAxes()
 
 	if config.practice then
-		local overrideTarget = FindBody("practicetarget", true)
-		if overrideTarget ~= 0 then
-			robot.playerPos = GetBodyTransform(overrideTarget).pos
+		local pp = GetPlayerCameraTransform().pos
+		local pt = FindTrigger("practicearea")
+		if pt ~= 0 and IsPointInTrigger(pt, pp) then
+			robot.playerPos = VecCopy(pp)
 			if not stackHas("navigate") then
 				robotTurnTowards(robot.playerPos)
 			end
 		else
-			robot.playerPos = Vec(0, -100, 0)
+			local overrideTarget = FindBody("practicetarget", true)
+			if overrideTarget ~= 0 then
+				robot.playerPos = GetBodyTransform(overrideTarget).pos
+				if not stackHas("navigate") then
+					robotTurnTowards(robot.playerPos)
+				end
+			else
+				robot.playerPos = Vec(0, -100, 0)
+			end
 		end
 	else
 		robot.playerPos = GetPlayerCameraTransform().pos
@@ -374,19 +376,30 @@ end
 hover = {}
 hover.hitBody = 0
 hover.contact = 0.0
-hover.distTarget = 0.3
+hover.distTarget = 1.1
 hover.distPadding = 0.3
 hover.timeSinceContact = 0.0
 
 
 function hoverInit()
-	QueryRequire("physical large")
-	rejectAllBodies(robot.allBodies)
-	local maxDist = 2.0
-	local hit, dist = QueryRaycast(robot.transform.pos, VecScale(robot.axes[2], -1), maxDist)
-	if hit then
-		hover.distTarget = dist
-		hover.distPadding = math.min(0.3, dist*0.5)
+	local f = FindBodies("foot")
+	if #f > 0 then
+		hover.distTarget = 0
+		for i=1, #f do
+			local ft = GetBodyTransform(f[i])
+			local fp = TransformToLocalPoint(robot.transform, ft.pos)
+			hover.distTarget = math.max(hover.distTarget, -fp[2])
+		end
+	else
+		QueryRequire("physical large")
+		rejectAllBodies(robot.allBodies)
+		local maxDist = 2.0
+		
+		local hit, dist = QueryRaycast(robot.transform.pos, VecScale(robot.axes[2], -1), maxDist)
+		if hit then
+			hover.distTarget = dist
+			hover.distPadding = math.min(0.3, dist*0.5)
+		end
 	end
 end
 
@@ -714,7 +727,7 @@ function feetUpdate(dt)
 				foot.worldTransform = Transform(p, r)
 				foot.localTransform = TransformToLocalTransform(robot.transform, foot.worldTransform)
 				if foot.stepAge == foot.stepLifeTime then
-					PlaySound(stepSound, p, 0.5)
+					PlaySound(stepSound, p, 0.5, false)
 				end
 			end
 			ConstrainPosition(foot.body, robot.body, GetBodyTransform(foot.body).pos, foot.worldTransform.pos, 8, foot.linForce)
@@ -816,11 +829,11 @@ function weaponFire(weapon, pos, dir)
 	pos = VecAdd(pos, VecScale(dir, 0.1))
 	
 	if weapon.type == "gun" then
-		PlaySound(shootSound, pos)
-		PointLight(pos, 1, 0.8, 0.6, 5)
+		PlaySound(shootSound, pos, 1.0, false)
+		PointLight(pos, 1, 0.8, 0.6, 1.5)
 		Shoot(pos, dir, 0, weapon.strength)
 	elseif weapon.type == "rocket" then
-		PlaySound(rocketSound, pos)
+		PlaySound(rocketSound, pos, 1.0, false)
 		Shoot(pos, dir, 1, weapon.strength)
 	end
 end
@@ -836,13 +849,16 @@ end
 
 
 function weaponEmitFire(weapon, t, amount)
+	if robot.stunned > 0 then
+		return
+	end
 	local p = TransformToParentPoint(t, Vec(0, 0, -0.1))
 	local d = TransformToParentVec(t, Vec(0, 0, -1))
 	ParticleReset()
 	ParticleTile(5)
-	ParticleColor(1, 1, 0.5, 1, 0, 0)
-	ParticleRadius(0.1*amount, 1*amount)
-	ParticleEmissive(10, 0)
+	ParticleColor(1, 1, 0.5, 1, 0.5, 0.2)
+	ParticleRadius(0.1*amount, 0.8*amount)
+	ParticleEmissive(6, 0)
 	ParticleDrag(0.1)
 	ParticleGravity(math.random()*20)
 	PointLight(p, 1, 0.8, 0.2, 2*amount)
@@ -869,14 +885,14 @@ function weaponEmitFire(weapon, t, amount)
 		--Hurt player
 		local toPlayer = VecSub(GetPlayerCameraTransform().pos, t.pos)
 		local distToPlayer = VecLength(toPlayer)
-		local distScale = clamp(1.0 - distToPlayer / 5.0, 0.0, 1.0)
+		local distScale = clamp(1.0 - distToPlayer / 6.0, 0.0, 1.0)
 		if distScale > 0 then
 			toPlayer = VecNormalize(toPlayer)
 			if VecDot(d, toPlayer) > 0.8 or distToPlayer < 0.5 then
 				rejectAllBodies(robot.allBodies)
 				local hit = QueryRaycast(p, toPlayer, distToPlayer)
 				if not hit or distToPlayer < 0.5 then
-					SetPlayerHealth(GetPlayerHealth() - 0.015 * weapon.strength * amount * distScale)
+					SetPlayerHealth(GetPlayerHealth() - 0.02 * weapon.strength * amount * distScale)
 				end
 			end	
 		end
@@ -1111,7 +1127,7 @@ function headUpdate(dt)
 	toPlayer = VecNormalize(toPlayer)
 
 	--Determine player visibility
-	playerVisible = false
+	local playerVisible = false
 	if config.hasVision and config.canSeePlayer then
 		if distToPlayer < config.viewDistance then	--Within view distance
 			local limit = math.cos(config.viewFov * 0.5 * math.pi / 180)
@@ -1164,6 +1180,7 @@ function headUpdate(dt)
 				head.alarmTimer = head.alarmTimer + dt
 				PlayLoop(chargeLoop, robot.transform.pos)
 				if head.alarmTimer > head.alarmTime and playerVisible then
+					SetString("hud.notification", "Detected by robot. Alarm triggered.")
 					SetBool("level.alarm", true)
 				end
 			else
@@ -1623,35 +1640,22 @@ function init()
 	stackInit()
 
 	patrolLocations = FindLocations("patrol")
-	--shootSound = LoadSound("tools/gun0.ogg", 8.0)
-	--rocketSound = LoadSound("tools/launcher0.ogg", 7.0)
+	shootSound = LoadSound("tools/gun0.ogg", 8.0)
+	rocketSound = LoadSound("tools/launcher0.ogg", 7.0)
 	local nomDist = 7.0
 	if config.stepSound == "s" then nomDist = 5.0 end
 	if config.stepSound == "l" then nomDist = 9.0 end
-	
-    
-    alien_body = FindBody("alien_body")
-    
-    --alienSound = LoadSound("MOD/sound/alien.ogg")	--- TODO: This :)
-    
-    alien_timer = 0
-    alien_sound_timer = 0
-    
-    --alien_head = FindShape("alien_head")
-    --alien_leg_front_right = FindShape("alien_leg_front_right")
-    --alien_leg_front_left = FindShape("alien_leg_front_left")
-    --alien_leg_rear_right = FindShape("alien_leg_rear_right")
-    --alien_leg_rear_left = FindShape("alien_leg_rear_left")
-    
-    --SetShapeCollisionFilter(alien_head, 2, 255-2)
-    --SetShapeCollisionFilter(alien_torso, 2, 255-2)
-    --SetShapeCollisionFilter(alien_leg_front_right, 2, 255-2)
-    --SetShapeCollisionFilter(alien_leg_front_left, 2, 255-2)
-    --SetShapeCollisionFilter(alien_leg_rear_right, 2, 255-2)
-    --SetShapeCollisionFilter(alien_leg_rear_left, 2, 255-2)
-    
-    
-    
+	stepSound = LoadSound("robot/step-" .. config.stepSound .. "0.ogg", nomDist)
+	headLoop = LoadLoop("robot/head-loop.ogg", 7.0)
+	turnLoop = LoadLoop("robot/turn-loop.ogg", 7.0)
+	walkLoop = LoadLoop("robot/walk-loop.ogg", 7.0)
+	rollLoop = LoadLoop("robot/roll-loop.ogg", 7.0)
+	chargeLoop = LoadLoop("robot/charge-loop.ogg", 8.0)
+	alertSound = LoadSound("robot/alert.ogg", 9.0)
+	huntSound = LoadSound("robot/hunt.ogg", 9.0)
+	idleSound = LoadSound("robot/idle.ogg", 9.0)
+	fireLoop = LoadLoop("tools/blowtorch-loop.ogg")
+	disableSound = LoadSound("robot/disable0.ogg")
 end
 
 
@@ -1660,7 +1664,6 @@ function update(dt)
 		return
 	else 
 		if not IsHandleValid(robot.body) then
-			DebugPrint("Handle not valid!")
 			for i=1, #robot.allBodies do
 				Delete(robot.allBodies[i])
 			end
@@ -1724,7 +1727,7 @@ function update(dt)
 	feetUpdate(dt)
 	
 	if IsPointInWater(robot.bodyCenter) then
-		PlaySound(disableSound, robot.bodyCenter)
+		PlaySound(disableSound, robot.bodyCenter, 1.0, false)
 		for i=1, #robot.allShapes do
 			SetShapeEmissiveScale(robot.allShapes[i], 0)
 		end
@@ -1732,7 +1735,7 @@ function update(dt)
 		robot.enabled = false
 	end
 	
-	robot.stunned = clamp(robot.stunned - dt, 0.0, 8.0)
+	robot.stunned = clamp(robot.stunned - dt, 0.0, 6.0)
 	if robot.stunned > 0 then
 		head.seenTimer = 0
 		weaponsReset()
@@ -1749,6 +1752,7 @@ function update(dt)
 	robot.speedScale = 1
 	robot.speed = 0
 	local state = stackTop()
+	SetTag(robot.body, "state", state.id)
 	
 	if state.id == "none" then
 		if config.patrol then
@@ -1829,7 +1833,7 @@ function update(dt)
 			stackPush("search")
 			state.nextAction = "done"
 		elseif state.nextAction == "done" then
-			PlaySound(idleSound, robot.bodyCenter)
+			PlaySound(idleSound, robot.bodyCenter, 1.0, false)
 			stackPop()
 		end	
 	end
@@ -1926,7 +1930,7 @@ function update(dt)
 		state.timer = state.timer - dt
 		head.dir = VecCopy(robot.dir)
 		if state.timer < 0 then
-			PlaySound(idleSound, robot.bodyCenter)
+			PlaySound(idleSound, robot.bodyCenter, 1.0, false)
 			stackPop()
 		else
 			state.turnTimer = state.turnTimer - dt
@@ -2008,7 +2012,7 @@ function update(dt)
 	if not stackHas("hunt") then
 		if hearing.hasNewSound and hearing.timeSinceLastSound < 1.0 then
 			stackClear()
-			PlaySound(alertSound, robot.bodyCenter)
+			PlaySound(alertSound, robot.bodyCenter, 1.0, false)
 			local s = stackPush("investigate")
 			s.pos = hearing.lastSoundPos	
 			hearingConsumeSound()
@@ -2019,7 +2023,7 @@ function update(dt)
 	if config.huntPlayer and not stackHas("hunt") then
 		if config.canSeePlayer and head.canSeePlayer or robot.canSensePlayer then
 			stackClear()
-			PlaySound(huntSound, robot.bodyCenter)
+			PlaySound(huntSound, robot.bodyCenter, 1.0, false)
 			stackPush("hunt")
 		end
 	end
@@ -2110,43 +2114,6 @@ function tick(dt)
 			end
 		end
 	end
-    
-    --local alien = GetBodyTransform(alien_body).pos
-    --local player = GetPlayerTransform().pos
-    --local alien_dist = VecDist(alien, player)
-    --local alienVoxelCount = GetShapeVoxelCount(alien_head) + GetShapeVoxelCount(alien_torso) + GetShapeVoxelCount(alien_leg_front_left) + GetShapeVoxelCount(alien_leg_front_right) + GetShapeVoxelCount(alien_leg_rear_left) + GetShapeVoxelCount(alien_leg_rear_right)
-    --local dir = VecSub(player, alien)
-    --dir[2] = dir[2] + 1.5
-    --
-    --alien_sound_timer = alien_sound_timer + dt
-    --local blah = math.random(4, 16)
-    --
-    --if alien_sound_timer > 15 then
-    --    PlaySound(alienSound, alien)
-    --    alien_sound_timer = 0
-    --
-    --end
-    --
-    --if alien_dist <= 3.1 and playerVisible == true then
-    --    alien_timer = alien_timer + dt
-    --    if alien_timer > 0.1 then
-    --        SetPlayerHealth(GetPlayerHealth() - 0.15)
-    --        SetPlayerVelocity(VecScale(dir, 6))
-    --    end
-    --else
-    --    alien_timer = 0
-    --end
-	--
-    --if alienVoxelCount < 5 then
-    --    SetTag(robot.body, "disabled")
-    --    robot.enabled = false
-    --
-    --    DebugPrint("dead")
-    --end
-    
-    
-    --DebugPrint(alienVoxelCount)
-    --DebugLine(player, alien)
 end
 
 
@@ -2154,9 +2121,9 @@ function hitByExplosion(strength, pos)
 	--Explosions smaller than 1.0 are ignored (with a bit of room for rounding errors)
 	if strength > 0.99 then
 		local d = VecDist(pos, robot.bodyCenter)	
-		local f = clamp((1.0 - d/10.0), 0.0, 1.0) * strength
+		local f = clamp((1.0 - (d-2.0)/6.0), 0.0, 1.0) * strength
 		if f > 0.2 then
-			robot.stunned = robot.stunned + f * 4.0
+			robot.stunned = math.max(robot.stunned, f * 4.0)
 		end
 		
 		--Give robots an extra push if they are not already moving that much
@@ -2164,8 +2131,8 @@ function hitByExplosion(strength, pos)
 		local maxVel = 7.0
 		local strength = 3.0
 		local dir = VecNormalize(VecSub(robot.bodyCenter, pos))
-		--Tilt direction slightly upwards to make them fly more
-		dir[2] = dir[2] + 0.2
+		--Tilt direction upwards to make them fly more
+		dir[2] = dir[2] + 1.0
 		dir = VecNormalize(dir)
 		for i=1, #robot.allBodies do
 			local b = robot.allBodies[i]
