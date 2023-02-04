@@ -178,6 +178,8 @@ function configInit()
 	if HasTag(body, "stepsound") then
 		config.stepSound = GetTagValue(body, "stepsound")
 	end
+	DebugPrint(string.format("Eye: %d", eye))
+	DebugPrint(string.format("Head: %d", head))
 end
 
 ------------------------------------------------------------------------
@@ -237,6 +239,7 @@ function robotSetAxes()
 	robot.axes[1] = TransformToParentVec(robot.transform, Vec(1, 0, 0))
 	robot.axes[2] = TransformToParentVec(robot.transform, Vec(0, 1, 0))
 	robot.axes[3] = TransformToParentVec(robot.transform, Vec(0, 0, 1))
+	DebugPrint(robot.transform[1])
 end
 
 
@@ -256,6 +259,7 @@ function robotInit()
 		robot.initialBodyTransforms[i] = GetBodyTransform(robot.allBodies[i])
 	end
 	robotSetAxes()
+	DebugPrint(string.format("Body: %d", robot.body))
 end
 
 
@@ -383,6 +387,7 @@ hover.timeSinceContact = 0.0
 
 function hoverInit()
 	local f = FindBodies("foot")
+	DebugPrint(string.format("Feet count: %d", #f))
 	if #f > 0 then
 		hover.distTarget = 0
 		for i=1, #f do
@@ -390,6 +395,7 @@ function hoverInit()
 			local fp = TransformToLocalPoint(robot.transform, ft.pos)
 			hover.distTarget = math.max(hover.distTarget, -fp[2])
 		end
+		DebugPrint(string.format("Feet distTarget: %f", hover.distTarget))
 	else
 		QueryRequire("physical large")
 		rejectAllBodies(robot.allBodies)
@@ -714,6 +720,8 @@ function feetUpdate(dt)
 			end
 			foot.candidateTransform = targetTransform
 		end
+
+		DebugPrint(string.format("Hover contact: %d", hover.contact))
 
 		--Animate foot
 		if hover.contact > 0 then
@@ -1108,6 +1116,9 @@ function headInit()
 	head.eye = FindLight("eye")
 	head.joint = FindJoint("head")
 	head.alarmTime = getTagParameter(head.eye, "alarm", 2.0)
+	DebugPrint(string.format("head: %d", head.body))
+	DebugPrint(string.format("eye: %d", head.eye))
+	DebugPrint(string.format("head joint: %d", head.joint))
 end
 
 
