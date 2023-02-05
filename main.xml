@@ -132,7 +132,7 @@
 				<joint name="hinge" pos="-0.0 0.05 0.4" rot="-90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 100"/>
 			</vox>
 		</vox>
-		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic.vox">
+		<vox pos="-3.4 -4.1 1.7" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Basic_Vent.vox">
 			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
 				<group name="Ring_Light" pos="0.15 0.0 0.0" rot="0.0 0.0 0.0">
 					<voxbox name="Light_Bulb" pos="-0.55 0.05 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 20" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
@@ -929,6 +929,7 @@
 			<voxbox name="Light_Bulb" pos="-0.8 3.0 -1.3" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" size="18 1 0" material="glass" color="1.0 0.74 0.42" pbr="0 1 0 15">
 				<light name="Light_Orange_Bright" pos="0.9 0.0 0.05" rot="90.0 -90.0 0.0" type="area" color="1.0 0.74 0.42" scale="0.8" size="0.1 1.8" reach="5" fogscale="3"/>
 			</voxbox>
+			<voxbox pos="0.5 3.5 -1.2" rot="0.0 0.0 0.0" size="8 6 9" brush="hole"/>
 		</vox>
 		<vox pos="0.0 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
 		<vox pos="3.6 0.0 3.6" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Corner_Turn.vox" object="Corridor_Wall_flat_4"/>
@@ -1783,12 +1784,6 @@
 			</group>
 		</vox>
 	</group>
-	<vox pos="13.4 4.2 2.8" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
-		<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
-			<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
-		</voxbox>
-		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
-	</vox>
 	<group name="Corridor_TubeBoth_TubeRight_Vent" pos="13.4 0.1 -6.5">
 		<vox pos="3.4 -4.1 -1.8" rot="0.0 -180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Corridor_Tube_Bend_Both_Vent.vox">
 			<vox pos="1.8 4.3 -5.2" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
@@ -2003,12 +1998,6 @@
 			<vox name="Tube_Bend_Both" tags="explosive=0.4" pos="0.85 4.6 -1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Sci_Fi_Tube.vox" object="Tube_Bend_Both"/>
 		</vox>
 	</group>
-	<vox pos="13.4 4.2 -6.5" rot="0.0 0.0 0.0" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_Shaft">
-		<voxbox name="Light_Bulb" pos="-0.1 1.2 0.0" rot="0.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.09 0.09" pbr="0 0 0 32">
-			<light name="Light_Red" pos="0.05 0.05 0.1" rot="90.0 90.0 0.0" type="area" color="1.0 0.09 0.09" scale="1" size="0.2 0.1" reach="8" unshadowed="0.1" fogscale="30" glare="0.5"/>
-		</voxbox>
-		<vox pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="3" strength="20" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
-	</vox>
 	<group name="Corridor_Basic_TubeLeft" pos="13.4 0.1 -15.79999">
 		<vox pos="4.4 0.0 -0.1" rot="0.0 180.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Space_Lock">
 			<vox pos="2.8 0.2 -3.5" density="3" strength="40" collide="true" file="MOD/assets/Sci_Fi_Lights.vox" object="Corridor_Light">
@@ -5339,6 +5328,90 @@
 				<joint name="hinge" pos="0.1 0.0 0.55" rot="-180.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" collide="false" limits="0 120"/>
 			</vox>
 		</vox>
+	</group>
+	<group name="Vents" pos="13.4 4.2 2.8">
+		<vox name="connector" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short_Hole">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox name="vent_Door" pos="0.0 -0.5 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+			<vox pos="0.7 0.2 -0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+		</vox>
+		<vox name="connector" pos="-21.1 0.0 13.8" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short_Hole">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox name="vent_Door" pos="0.0 -0.5 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+		</vox>
+		<vox name="connector" pos="0.0 0.0 -9.3" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short_Hole">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox name="vent_Door" pos="0.0 -0.5 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+			<vox pos="0.7 0.2 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+		</vox>
+		<vox name="closed_Conector" pos="0.0 0.0 5.6" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+		</vox>
+		<vox name="closed_Conector" pos="0.0 0.0 -22.5" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox pos="0.7 0.2 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="0.0 0.2 -0.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+		</vox>
+		<vox name="closed_Conector" pos="0.0 0.0 11.2" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox pos="0.7 0.2 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="0.0 0.2 0.8" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+		</vox>
+		<vox name="closed_Conector" pos="-9.9 0.0 5.6" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox pos="-0.7 0.2 -0.1" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="0.0 0.2 -0.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+		</vox>
+		<vox name="closed_Conector" pos="14.1 0.0 5.6" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short_Hole">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox pos="0.0 0.2 0.8" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+			<vox pos="0.0 0.2 -0.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+			<vox pos="0.7 0.2 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox name="vent_Door" pos="-0.0 -0.0 0.0" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_door"/>
+		</vox>
+		<vox pos="0.0 0.0 8.3" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox pos="2.9 0.0 5.5" rot="0.0 180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1_Both"/>
+		<vox pos="-2.8 0.0 5.5" rot="0.0 180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1_Both"/>
+		<vox pos="7.0 0.0 5.6" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1"/>
+		<vox pos="-7.0 0.0 5.5" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1"/>
+		<vox pos="-12.8 0.0 13.8" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1"/>
+		<vox pos="11.2 0.0 5.6" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_1"/>
+		<vox pos="-0.0 0.0 -2.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox pos="0.0 0.0 -6.6" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox pos="0.0 0.0 -12.2" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox pos="0.0 0.0 -15.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2"/>
+		<vox pos="0.0 0.0 -19.7" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2"/>
+		<vox pos="0.0 0.0 2.7" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox name="closed_Conector" pos="-9.9 0.0 13.8" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_connector_short">
+			<voxbox name="Light_Bulb" pos="0.1 1.2 -0.1" rot="0.0 -90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 2" material="glass" color="1.0 0.07 0.07" pbr="0 1 0 15">
+				<light name="Light_Blue" pos="0.05 0.0 0.1" rot="90.0 0.0 0.0" type="area" color="1.0 0.07 0.07" scale="2" size="0.1 0.2" unshadowed="0.1" fogscale="20" glare="0.4"/>
+			</voxbox>
+			<vox pos="0.7 0.2 0.0" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed_2"/>
+			<vox pos="0.0 0.2 0.8" rot="0.0 0.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_closed"/>
+		</vox>
+		<vox pos="-9.9 0.0 8.3" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
+		<vox pos="-9.9 0.0 10.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
 	</group>
 </scene>
 
