@@ -4700,7 +4700,7 @@
 	<group name="alien" pos="23.6 0.85 41.8" rot="0.0 0.0 0.0">
 		<script pos="0.0 -0.8 0.0" file="MOD/alien/alien_ai.lua" param0="type=investigate">
 			<body name="head" tags="head" pos="-0.3 0.18 -0.1" dynamic="true">
-				<vox name="Head" tags="head alien_head" pos="0.0 0.0 0.1" density="0.5" strength="2" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Head">
+				<vox name="Head" tags="head alien_head" pos="0.0 0.0 0.1" density="0.5" strength="2" file="MOD/assets/AI_Enemy.vox" object="Head">
 					<joint name="Joint" tags="head" pos="0.1 0.18 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
 					<light name="eye_Light" tags="eyeLight" pos="-0.1 0.15 -0.15" rot="0.0 -90.0 0.0" type="area" color="1.0 0.44 0.13" scale="0.2" size="0.1 0.1" fogscale="3" glare="0.1"/>
 					<light name="eye_Light" tags="eyeLight" pos="-0.1 0.15 0.05" rot="0.0 -90.0 0.0" type="area" color="1.0 0.44 0.13" scale="0.2" size="0.1 0.1" fogscale="3" glare="0.1"/>
@@ -4708,46 +4708,82 @@
 				</vox>
 			</body>
 			<vox name="Fangs" tags="fang" pos="-0.4 0.18 -0.1" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Fang">
-				<joint name="Joint" pos="0.1 0.05 0.0" rot="-90.0 0.0 0.0" type="hinge" limits="-45 45"/>
+				<joint name="Joint" pos="0.05 0.1 -0.05" rot="-90.0 0.0 0.0" type="hinge" limits="-45 45"/>
 			</vox>
 			<vox name="Fangs" tags="fang" pos="-0.4 0.18 0.1" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Fang">
-				<joint name="Joint" pos="0.1 0.05 -0.1" rot="-90.0 0.0 0.0" type="hinge" limits="-45 45"/>
+				<joint name="Joint" pos="0.05 0.1 -0.05" rot="-90.0 0.0 0.0" type="hinge" limits="-45 45"/>
 			</vox>
 			<body name="body" tags="body alien_body" pos="0.0 0.18 -0.1" dynamic="true">
-				<compound name="yooo" pos="0.0 0.0 0.0">
-					<vox name="left_body" pos="-0.1 0.0 0.11" rot="10.0 0.0 0.0" density="1" strength="2" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Body_2"/>
-					<vox name="right_body" pos="-0.1 0.0 -0.01" rot="-10.0 0.0 0.0" density="1" strength="2" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Body"/>
-				</compound>
-				<group name="Tail" pos="0.3 -0.05 0.1" rot="0.0 0.0 0.0">
-					<vox name="Tail" pos="-0.1 0.1 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Tail">
-						<joint name="Joint" pos="-0.1 0.05 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
-					</vox>
-					<vox name="Tail" pos="0.1 0.1 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Tail_1">
-						<joint name="Joint" pos="-0.1 0.05 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
-						<light name="tail_light" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="sphere" color="1.0 0.89 0.3" scale="0.3" unshadowed="0.1" fogscale="3"/>
-					</vox>
-				</group>
+				<vox name="right_body" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Body"/>
 			</body>
 			<group name="left_legs" pos="-0.1 -0.12 0.19" rot="0.0 180.0 0.0">
 				<body name="left_front_leg" tags="foot" pos="-0.0 0.0 0.03" dynamic="true">
-					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 0.0" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
 					</vox>
 				</body>
 				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 0.03" dynamic="true">
-					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.01" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
 					</vox>
 				</body>
 			</group>
 			<group name="right_legs" pos="-0.1 -0.12 -0.29" rot="0.0 180.0 0.0">
 				<body name="left_front_leg" tags="foot" pos="0.0 0.0 -0.02" dynamic="true">
-					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
 					</vox>
 				</body>
 				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 -0.02" dynamic="true">
-					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
+					</vox>
+				</body>
+			</group>
+			<group name="Tail" pos="0.3 0.13 0.0" rot="0.0 0.0 0.0">
+				<vox name="Tail" pos="-0.1 0.1 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Tail">
+					<joint name="Joint" pos="-0.1 0.05 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
+				</vox>
+				<vox name="Tail" pos="0.1 0.1 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Tail_1">
+					<joint name="Joint" pos="-0.1 0.05 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
+					<light name="tail_light" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="sphere" color="1.0 0.89 0.3" scale="0.3" unshadowed="0.1" fogscale="3"/>
+				</vox>
+			</group>
+		</script>
+	</group>
+	<group name="alien" pos="21.86 0.85 43.65" rot="0.0 0.0 0.0">
+		<script pos="0.0 -0.8 0.0" file="MOD/alien/alien_ai.lua" param0="type=investigate">
+			<body name="head" tags="head" pos="-0.3 0.18 -0.1" dynamic="true">
+				<vox name="Head" tags="head alien_head" pos="0.0 0.0 0.1" density="0.5" strength="2" file="MOD/assets/AI_Enemy.vox" object="Head">
+					<joint name="Joint" tags="head" pos="0.1 0.18 -0.05" rot="-90.0 -180.0 0.0" type="hinge" limits="-45 45"/>
+					<light name="eye_Light" tags="eyeLight" pos="-0.1 0.15 -0.15" rot="0.0 -90.0 0.0" type="area" color="1.0 0.44 0.13" scale="0.2" size="0.1 0.1" fogscale="3" glare="0.1"/>
+					<light name="eye_Light" tags="eyeLight" pos="-0.1 0.15 0.05" rot="0.0 -90.0 0.0" type="area" color="1.0 0.44 0.13" scale="0.2" size="0.1 0.1" fogscale="3" glare="0.1"/>
+					<light name="eyeseight" tags="eye" pos="-0.1 0.25 -0.05" rot="0.0 270.0 -90.0" type="area" scale="0" size="0.1 0.3"/>
+				</vox>
+			</body>
+			<body name="body" tags="body alien_body" pos="0.0 0.18 -0.1" dynamic="true">
+				<vox name="right_body" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Body"/>
+			</body>
+			<group name="left_legs" pos="-0.1 -0.12 0.19" rot="0.0 180.0 0.0">
+				<body name="left_front_leg" tags="foot" pos="-0.0 0.0 0.03" dynamic="true">
+					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 0.0" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
+					</vox>
+				</body>
+				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 0.03" dynamic="true">
+					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 -0.01" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
+					</vox>
+				</body>
+			</group>
+			<group name="right_legs" pos="-0.1 -0.12 -0.29" rot="0.0 180.0 0.0">
+				<body name="left_front_leg" tags="foot" pos="0.0 0.0 -0.02" dynamic="true">
+					<vox name="Leg" tags="alien_leg_front_left" pos="0.02 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
+					</vox>
+				</body>
+				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 -0.02" dynamic="true">
+					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.11 0.1 0.04" rot="0.0 0.0 0.0" density="1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-70 70"/>
 					</vox>
 				</body>
@@ -4757,33 +4793,57 @@
 	<group name="alien_test" pos="23.6 1.17 39.9" rot="0.0 0.0 0.0">
 		<script pos="0.0 -0.81 0.0" file="MOD/alien/alien_ai.lua" param0="type=investigate">
 			<body name="head" tags="head" pos="-0.08 0.48 -0.1" dynamic="true">
-				<vox name="Head" tags="head alien_head" pos="0.1 0.0 0.1" density="0.5" strength="2" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Head">
+				<vox name="Head" tags="head alien_head" pos="0.1 0.0 0.1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Head">
 					<joint name="Joint" tags="head" pos="0.05 0.0 -0.05" rot="-90.0 180.0 0.0" type="hinge" limits="-45 45"/>
-					<light name="eyeseight" tags="eye" pos="-0.1 0.25 -0.05" rot="0.0 270.0 90.0" type="area" scale="0" size="0.1 0.3"/>
 				</vox>
+				<light name="eyeseight" tags="eye" pos="0.0 0.25 0.05" rot="0.0 270.0 90.0" type="area" scale="0" size="0.1 0.3"/>
 			</body>
 			<body name="body" tags="body" pos="0.13 0.28 -0.1" dynamic="true">
-				<vox name="right_body" pos="-0.1 0.0 -0.05" rot="0.0 0.0 0.0" density="20" strength="20" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Body"/>
-				<vox name="left_body" pos="-0.1 0.0 0.15" rot="0.0 0.0 0.0" density="20" strength="20" collide="true" prop="true" file="MOD/assets/AI_Enemy.vox" object="Body_2"/>
+				<vox name="right_body" tags="body" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="5" strength="5" file="MOD/assets/AI_Enemy.vox" object="Body"/>
 			</body>
 			<group name="left_legs" pos="-0.07 -0.12 0.06" rot="0.0 180.0 0.0">
 				<body name="left_rear_leg" tags="leg" pos="-0.1 0.0 0.0" dynamic="true">
-					<vox name="Leg" pos="-0.1 0.1 0.01" rot="0.0 0.0 0.0" density="5" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" pos="-0.1 0.1 0.01" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
 					</vox>
 				</body>
 				<body name="left_rear_leg" tags="leg" pos="-0.1 0.0 0.22" dynamic="true">
-					<vox name="Leg" pos="-0.1 0.1 0.09" rot="0.0 0.0 0.0" density="5" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" pos="-0.1 0.1 0.09" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
 					</vox>
 				</body>
 				<body name="left_rear_leg" tags="foot" pos="-0.1 -0.3 0.0" dynamic="true">
-					<vox name="Leg" pos="-0.1 0.1 0.01" rot="0.0 0.0 0.0" density="5" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" pos="-0.1 0.1 0.01" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
 					</vox>
 				</body>
 				<body name="left_rear_leg" tags="foot" pos="-0.1 -0.3 0.22" dynamic="true">
-					<vox name="Leg" pos="-0.1 0.1 0.09" rot="0.0 0.0 0.0" density="5" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
+					<vox name="Leg" pos="-0.1 0.1 0.09" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
+					</vox>
+				</body>
+			</group>
+		</script>
+	</group>
+	<group name="alien_test" pos="23.6 0.88 38.86" rot="0.0 0.0 0.0">
+		<script pos="0.0 -0.81 0.0" file="MOD/alien/alien_ai.lua" param0="type=investigate">
+			<body name="head" tags="head" pos="-0.08 0.48 -0.1" dynamic="true">
+				<vox name="Head" tags="head alien_head" pos="0.1 0.0 0.1" strength="2" file="MOD/assets/AI_Enemy.vox" object="Head">
+					<joint name="Joint" tags="head" pos="0.05 0.0 -0.05" rot="-90.0 180.0 0.0" type="hinge" limits="-45 45"/>
+				</vox>
+				<light name="eyeseight" tags="eye" pos="0.0 0.25 0.05" rot="0.0 270.0 90.0" type="area" scale="0" size="0.1 0.3"/>
+			</body>
+			<body name="body" tags="body" pos="0.13 0.28 -0.1" dynamic="true">
+				<vox name="right_body" tags="body" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="5" strength="5" file="MOD/assets/AI_Enemy.vox" object="Body"/>
+			</body>
+			<group name="left_legs" pos="-0.07 -0.12 0.06" rot="0.0 180.0 0.0">
+				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 0.0" dynamic="true">
+					<vox name="Leg" pos="-0.1 0.1 0.01" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
+						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
+					</vox>
+				</body>
+				<body name="left_rear_leg" tags="foot" pos="-0.1 0.0 0.22" dynamic="true">
+					<vox name="Leg" pos="-0.1 0.1 0.09" rot="0.0 0.0 0.0" strength="2" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.3 -0.06" rot="0.0 360.0 -90.0" type="hinge" limits="-30 30"/>
 					</vox>
 				</body>
