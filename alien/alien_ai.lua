@@ -239,7 +239,6 @@ function robotSetAxes()
 	robot.axes[1] = TransformToParentVec(robot.transform, Vec(1, 0, 0))
 	robot.axes[2] = TransformToParentVec(robot.transform, Vec(0, 1, 0))
 	robot.axes[3] = TransformToParentVec(robot.transform, Vec(0, 0, 1))
-	DebugPrint(robot.transform[1])
 end
 
 
@@ -720,8 +719,6 @@ function feetUpdate(dt)
 			end
 			foot.candidateTransform = targetTransform
 		end
-
-		DebugPrint(string.format("Hover contact: %d", hover.contact))
 
 		--Animate foot
 		if hover.contact > 0 then
