@@ -4737,19 +4737,9 @@
 						<joint name="Joint" pos="0.05 0.2 0.0" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
 					</vox>
 				</body>
-				<body name="left_front_foot" tags="foot" pos="0.1 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
-					<vox name="Feet" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Feet">
-						<joint name="Joint" pos="0.05 0.1 -0.05" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
-					</vox>
-				</body>
 				<body name="left_rear_leg" tags="leg" pos="-0.1 0.0 0.0" dynamic="true">
 					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.1 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.2 0.0" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
-					</vox>
-				</body>
-				<body name="left_rear_foot" tags="foot" pos="-0.1 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
-					<vox name="Feet" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Feet">
-						<joint name="Joint" pos="0.05 0.1 -0.05" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
 					</vox>
 				</body>
 			</group>
@@ -4759,19 +4749,9 @@
 						<joint name="Joint" pos="0.05 0.2 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
 					</vox>
 				</body>
-				<body name="left_front_foot" tags="foot" pos="0.1 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
-					<vox name="Feet" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Feet">
-						<joint name="Joint" pos="0.05 0.1 -0.05" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
-					</vox>
-				</body>
 				<body name="left_rear_leg" tags="leg" pos="-0.1 0.0 0.0" dynamic="true">
 					<vox name="Leg" tags="alien_leg_rear_left" pos="-0.1 0.1 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Leg">
 						<joint name="Joint" pos="0.05 0.2 -0.1" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
-					</vox>
-				</body>
-				<body name="left_rear_foot" tags="foot" pos="-0.1 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
-					<vox name="Feet" pos="-0.1 0.0 0.05" rot="0.0 0.0 0.0" density="1" strength="2" prop="true" file="MOD/assets/AI_Enemy.vox" object="Feet">
-						<joint name="Joint" pos="0.05 0.1 -0.05" rot="0.0 0.0 -90.0" type="hinge" limits="-45 45"/>
 					</vox>
 				</body>
 			</group>
