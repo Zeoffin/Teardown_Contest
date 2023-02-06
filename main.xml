@@ -5447,5 +5447,6 @@
 		<vox pos="-9.9 0.0 8.3" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
 		<vox pos="-9.9 0.0 10.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
 	</group>
+	<vox name="Exterior" pos="-41.0 -4.0 -19.1" collide="true" file="MOD/assets/Exterior_Ship.vox"/>
 </scene>
 
