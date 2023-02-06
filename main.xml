@@ -2263,12 +2263,14 @@
 				</voxbox>
 			</vox>
 			<vox name="SpaceLock_Panel" pos="-1.55 2.0 1.7" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_SpaceLock">
-				<voxbox name="SpaceLock_Screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11"/>
+				<voxbox name="SpaceLock_Screen" tags="spacelock_screen" pos="0.3 0.1 0.0" rot="0.0 -180.0 0.0" collide="true" size="5 3 1" color="0.11 0.11 0.11">
+					<screen tags="spacelock_screen" pos="0.25 0.15 0.1" size="0.5 0.3" bulge="0" script="MOD/scripts/doors/spacelockScreen.lua" enabled="true" interactive="true"/>
+				</voxbox>
 				<voxbox name="Light_Bulb" pos="0.4 0.4 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
-					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
+					<light name="Light_Green" tags="spacelock_green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 				<voxbox name="Light_Bulb" pos="-0.2 0.4 -0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="1.0 0.2 0.2" pbr="0 0 0 32">
-					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
+					<light name="Light_Red" tags="spacelock_red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
 			<vox pos="0.5 0.3 0.95" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_DoorFrame.vox" object="Space_Lock_Door_1">
