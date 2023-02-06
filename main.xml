@@ -376,7 +376,7 @@
 		<vox name="Panel" pos="-14.65 0.4 -2.1" rot="0.0 90.0 0.0" density="1" strength="10" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Panel"/>
 		<vox name="Panel" pos="-11.7 0.4 -2.1" rot="0.0 90.0 0.0" density="1" strength="10" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Panel"/>
 		<vox name="Water" pos="3.8 0.4 -2.4" rot="0.0 180.0 0.0" density="1" strength="10" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="WaterTank_Machine"/>
-		<vox name="Plant" pos="-1.85 0.4 -2.35" rot="0.0 180.0 0.0" density="1" strength="10" collide="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Plant"/>
+		<vox name="Plant" pos="-1.85 0.4 -2.35" rot="0.0 180.0 0.0" density="1" strength="1" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Plant"/>
 		<vox pos="-16.50001 1.2 -2.35" rot="90.0 20.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Yellow"/>
 		<vox pos="-16.95001 1.2 -2.2" rot="0.0 0.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Book_Blue"/>
 		<vox pos="-14.3 0.4 -2.3" rot="0.0 175.0 0.0" density="1" strength="5" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Suitcase"/>
@@ -2253,7 +2253,7 @@
 					<light name="Light_Red" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="1.0 0.2 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
 				</voxbox>
 			</vox>
-			<vox pos="-4.3 1.75 2.3" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Small">
+			<vox pos="-4.3 1.75 2.6" rot="0.0 90.0 0.0" collide="true" file="MOD/assets/Door_ControlPanel.vox" object="Door_ControlPanel_Small">
 				<voxbox name="Small_Door_Screen" pos="0.1 0.3 0.0" rot="0.0 -180.0 0.0" collide="true" size="2 2 1" color="0.11 0.11 0.11"/>
 				<voxbox name="Light_Bulb" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 1" material="glass" color="0.15 1.0 0.2" pbr="0 0 0 32">
 					<light name="Light_Green" pos="0.05 0.05 0.05" rot="0.0 -360.0 -90.0" type="capsule" color="0.15 1.0 0.2" scale="0.1" size="0 0.05" unshadowed="0.1" fogscale="2"/>
