@@ -295,7 +295,7 @@
 			</voxbox>
 		</vox>
 		<group name="Locker" pos="-18.6 0.4 -2.2" rot="0.0 90.0 0.0">
-			<vox name="Locker" pos="0.1 0.0 -0.0" rot="0.0 180.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
+			<vox name="Locker" pos="0.1 0.0 0.0" rot="0.0 180.0 0.0" density="2" strength="40" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
 			<vox name="Locker_Door" pos="-0.2 0.3 -0.5" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
 				<joint name="hinge" pos="0.1 0.1 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
 				<joint name="hinge" pos="0.1 0.5 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
@@ -322,7 +322,7 @@
 			</vox>
 		</group>
 		<group name="Locker" pos="-19.9 0.4 -0.8" rot="0.0 180.0 0.0">
-			<vox name="Locker" pos="0.1 0.0 0.0" rot="0.0 180.0 0.0" density="2" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
+			<vox name="Locker" pos="0.1 0.0 0.0" rot="0.0 180.0 0.0" density="2" strength="40" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet"/>
 			<vox name="Locker_Door" pos="-0.2 0.3 -0.5" rot="0.0 180.0 0.0" density="1" strength="40" prop="true" file="MOD/assets/Sci_Fi_Assets.vox" object="Cabinet_Door">
 				<joint name="hinge" pos="0.1 0.1 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
 				<joint name="hinge" pos="0.1 0.5 0.4" rot="90.0 -90.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0.001" limits="0 120"/>
@@ -4845,17 +4845,6 @@
 			</group>
 		</script>
 	</group>
-	<vox name="Flare-Item" pos="23.8 0.4 -0.25" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="Flare"/>
-	<vox name="CellStick-Item" pos="26.25 0.4 -0.25" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="CellStick">
-		<voxbox name="Light_Bulb" pos="0.1 2.3 0.0" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="1 1 28" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="lightsource" pos="0.05 0.05 1.4" rot="0.0 0.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="15" size="2.7 0.05" unshadowed="0.1" fogscale="1"/>
-		</voxbox>
-	</vox>
-	<vox name="Glowstick-Item" pos="25.1 0.4 -0.3" rot="0.0 0.0 0.0" density="1" strength="50" prop="true" file="MOD/assets/items.vox" object="Glowstick">
-		<voxbox name="Light_Bulb" pos="0.2 0.3 0.1" rot="-90.0 90.0 0.0" density="1.5" strength="0.1" collide="true" prop="false" size="3 3 11" material="glass" color="0.42 0.75 1.0" pbr="0 0 0 32">
-			<light name="lightsource" pos="0.15 0.15 0.55" rot="0.0 0.0 -90.0" type="capsule" color="0.42 0.75 1.0" scale="30" size="0.8 0.15" unshadowed="0.1" fogscale="1" glare="0.3"/>
-		</voxbox>
-	</vox>
 	<group name="StairsDown" pos="-19.5 0.1 16.6">
 		<vox pos="-1.0 0.0 0.0" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Stairs.vox" object="Corridor_Doorway_Stairs"/>
 		<vox pos="-6.3 -4.10001 0.00001" rot="0.0 -90.0 0.0" density="10" strength="500" collide="true" file="MOD/assets/Sci_Fi_Stairs.vox" object="Corridor_StairWay">
@@ -5442,6 +5431,13 @@
 		<vox pos="-9.9 0.0 8.3" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
 		<vox pos="-9.9 0.0 10.9" rot="0.0 -180.0 0.0" density="1" strength="50" collide="true" file="MOD/assets/Sci_Fi_Vent.vox" object="Vent_2_Both"/>
 	</group>
-	<vox name="Exterior" pos="-41.0 -4.0 -19.1" collide="true" file="MOD/assets/Exterior_Ship.vox"/>
+	<group name="Mission-Items" pos="-10.0 -6.4 7.7">
+		<vox name="fuel" pos="34.6 7.2 7.2" rot="0.0 60.0 0.0" file="MOD/assets/Mission_Items.vox" object="Fuel" scale="0.2"/>
+		<vox name="DNA" pos="17.66 9.1 14.41" rot="0.0 30.0 0.0" file="MOD/assets/Mission_Items.vox" object="DNA" scale="0.1"/>
+		<vox name="Artifact" pos="13.82 11.3 -10.11" rot="0.0 40.0 0.0" file="MOD/assets/Mission_Items.vox" object="Artifact" scale="0.15"/>
+		<vox name="Jetpack" pos="-21.73 2.8 2.3" rot="0.0 30.0 0.0" file="MOD/assets/Mission_Items.vox" object="Jetpack" scale="0.5"/>
+		<vox name="Inteligence" pos="23.5 11.15 -27.6" rot="0.0 -130.0 -90.0" file="MOD/assets/Mission_Items.vox" object="Inteligence" scale="0.5"/>
+	</group>
+	<vox name="Exterior" pos="-41.0 -4.0 -19.1" rot="0.0 0.0 0.0" collide="true" file="MOD/assets/Exterior_Ship.vox"/>
 </scene>
 
